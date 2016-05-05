@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+.row {
+  width: 100%;
+  height: 41em; }
+  .row .slider {
+    border: 1px solid red;
+    height: 100%; }
+    @media (min-width: 100px) and (max-width: 300px) {
+      .row .slider {
+        height: 7em; } }
+    @media (min-width: 301px) and (max-width: 600px) {
+      .row .slider {
+        height: 15em; } }
+    @media (min-width: 601px) and (max-width: 800px) {
+      .row .slider {
+        height: 20em; } }
+    @media (min-width: 801px) and (max-width: 1000px) {
+      .row .slider {
+        height: 25em; } }
+    .row .slider .slide {
+      height: 100%;
+      width: 100%;
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: black;
+      margin: 0 auto;
+      position: absolute;
+      opacity: 0;
+      animation-name: next-slide;
+      animation-duration: 60s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite; }
+    .row .slider .slide:first-child {
+      background-image: url("../images/aikido_20141209_81133.jpg");
+      animation-delay: 0s; }
+    .row .slider .slide:nth-child(2) {
+      background-image: url("../images/aikido_20141209_81186.jpg");
+      animation-delay: 5s; }
+    .row .slider .slide:nth-child(3) {
+      background-image: url("../images/aikido_20141209_81254.jpg");
+      animation-delay: 10s; }
+    .row .slider .slide:nth-child(4) {
+      background-image: url("../images/aikido_20141209_81295.jpg");
+      animation-delay: 15s; }
+    .row .slider .slide:nth-child(5) {
+      background-image: url("../images/aikido_20141209_81355.jpg");
+      animation-delay: 20s; }
+    .row .slider .slide:nth-child(6) {
+      background-image: url("../images/aikido_20141209_81461.jpg");
+      animation-delay: 25s; }
+    .row .slider .slide:nth-child(7) {
+      background-image: url("../images/aikido_20141209_81734.jpg");
+      animation-delay: 30s; }
+    .row .slider .slide:nth-child(8) {
+      background-image: url("../images/aikido_20141209_81915.jpg");
+      animation-delay: 35s; }
+    .row .slider .slide:nth-child(9) {
+      background-image: url("../images/aikido_20141209_82054.jpg");
+      animation-delay: 40s; }
+    .row .slider .slide:nth-child(10) {
+      background-image: url("../images/aikido_20141209_82080.jpg");
+      animation-delay: 45s; }
+    .row .slider .slide:nth-child(11) {
+      background-image: url("../images/aikido_20141209_82210.jpg");
+      animation-delay: 50s; }
+    .row .slider .slide:nth-child(12) {
+      background-image: url("../images/aikido_20141209_82238.jpg");
+      animation-delay: 55s; }
+    .row .slider .slide:nth-child(13) {
+      background-image: url("../images/aikido_20141209_82548.jpg");
+      animation-delay: 60s; }
+@keyframes next-slide {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  30% {
+    opacity: 0; } }
+  .row .baner {
+    border: 1px solid yellow;
+    background-color: black;
+    background-image: url("../images/aikido_pion.jpg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .row .baner {
+        background-image: url(../images/aikido_poziom.jpg);
+        background-size: 80%; } }
+    @media (max-width: 500px) {
+      .row .baner {
+        height: 30%; } }
+    @media (min-width: 501px) and (max-width: 800px) {
+      .row .baner {
+        height: 40%; } }
+    @media (min-width: 801px) and (max-width: 1000px) {
+      .row .baner {
+        height: 50%; } }
+
+/*# sourceMappingURL=aikido.css.map */
