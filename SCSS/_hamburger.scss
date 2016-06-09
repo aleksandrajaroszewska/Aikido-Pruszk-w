@@ -13,22 +13,21 @@ $bar-width: 2.25em;
     box-sizing: border-box;
 }
 
-.main{
+.home {
     
- .menu-wrapper {
-    position: relative;
-     
-}
+ 
 
 // Menu
 .menu {
-    position:fixed;
+    
     width: $bar-width;
     height: $bar-height;
     background-color: $color2;
     user-select: none;
     transition: all 0.25s ease-in-out;
     cursor: pointer;
+   
+     
    
     color: $color2;
     -webkit-perspective: 1000;
@@ -45,6 +44,12 @@ $bar-width: 2.25em;
         line-height: $bar-height*5;
         top: -$bar-height*2;
         left: $bar-width/2;
+         @media (max-width:780px){
+            opacity:0;
+
+        }
+        
+      
     }
     
     &:hover > ul.nav-links, &.open > ul.nav-links {
@@ -60,6 +65,7 @@ $bar-width: 2.25em;
     &:after, &:before {
        
         content: "";
+       
         position: absolute;
         width: $bar-width;
         height: $bar-height;

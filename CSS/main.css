@@ -1,77 +1,88 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two:400italic);
-.main {
+.home {
   width: auto;
-  box-sizing: border-box;
-  background-color: black; }
-  .main .row {
+  height: 41em; }
+  .home .row {
+    width: 100%;
     height: 41em;
     margin: 0 auto; }
-    .main .row .slider {
-      background-color: black;
+    .home .row .slider {
       height: 100%; }
-      @media (min-width: 100px) and (max-width: 300px) {
-        .main .row .slider {
-          height: 7em; } }
-      @media (min-width: 301px) and (max-width: 600px) {
-        .main .row .slider {
-          height: 15em; } }
-      @media (min-width: 601px) and (max-width: 800px) {
-        .main .row .slider {
-          height: 20em; } }
-      @media (min-width: 801px) and (max-width: 1000px) {
-        .main .row .slider {
-          height: 25em; } }
-      .main .row .slider .slide {
+      @media (max-width: 780px) {
+        .home .row .slider {
+          height: 80%; } }
+      @media (max-width: 650px) {
+        .home .row .slider {
+          height: 60%; } }
+      @media (max-width: 440px) {
+        .home .row .slider {
+          height: 45%; } }
+      .home .row .slider .slide {
+        position: absolute;
+        left: -0.1em;
         height: 100%;
         width: 100%;
-        background-position: center;
+        background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
-        background-color: black;
-        margin: 0 auto;
-        position: absolute;
         opacity: 0;
         animation-name: next-slide;
         animation-duration: 60s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite; }
-      .main .row .slider .slide:first-child {
+      .home .row .slider h2 {
+        color: white;
+        font-size: 5rem;
+        opacity: 0.8;
+        padding: 0.3em;
+        font-family: 'Raleway', sans-serif; }
+        @media (max-width: 768px) {
+          .home .row .slider h2 {
+            font-size: 3rem; } }
+        .home .row .slider h2 span {
+          color: #EBE265;
+          padding-left: 0.5em; }
+      .home .row .slider p {
+        color: #fff016;
+        font-size: 2.5rem;
+        padding: 1em; }
+      .home .row .slider .slide:first-child {
         background-image: url("../images/aikido_20141209_81133.jpg");
         animation-delay: 0s; }
-      .main .row .slider .slide:nth-child(2) {
+      .home .row .slider .slide:nth-child(2) {
         background-image: url("../images/aikido_20141209_81186.jpg");
         animation-delay: 5s; }
-      .main .row .slider .slide:nth-child(3) {
+      .home .row .slider .slide:nth-child(3) {
         background-image: url("../images/aikido_20141209_81254.jpg");
         animation-delay: 10s; }
-      .main .row .slider .slide:nth-child(4) {
+      .home .row .slider .slide:nth-child(4) {
         background-image: url("../images/aikido_20141209_81295.jpg");
         animation-delay: 15s; }
-      .main .row .slider .slide:nth-child(5) {
+      .home .row .slider .slide:nth-child(5) {
         background-image: url("../images/aikido_20141209_81355.jpg");
         animation-delay: 20s; }
-      .main .row .slider .slide:nth-child(6) {
+      .home .row .slider .slide:nth-child(6) {
         background-image: url("../images/aikido_20141209_81461.jpg");
         animation-delay: 25s; }
-      .main .row .slider .slide:nth-child(7) {
+      .home .row .slider .slide:nth-child(7) {
         background-image: url("../images/aikido_20141209_81734.jpg");
         animation-delay: 30s; }
-      .main .row .slider .slide:nth-child(8) {
+      .home .row .slider .slide:nth-child(8) {
         background-image: url("../images/aikido_20141209_81915.jpg");
         animation-delay: 35s; }
-      .main .row .slider .slide:nth-child(9) {
+      .home .row .slider .slide:nth-child(9) {
         background-image: url("../images/aikido_20141209_82054.jpg");
         animation-delay: 40s; }
-      .main .row .slider .slide:nth-child(10) {
+      .home .row .slider .slide:nth-child(10) {
         background-image: url("../images/aikido_20141209_82080.jpg");
         animation-delay: 45s; }
-      .main .row .slider .slide:nth-child(11) {
+      .home .row .slider .slide:nth-child(11) {
         background-image: url("../images/aikido_20141209_82210.jpg");
         animation-delay: 50s; }
-      .main .row .slider .slide:nth-child(12) {
+      .home .row .slider .slide:nth-child(12) {
         background-image: url("../images/aikido_20141209_82238.jpg");
         animation-delay: 55s; }
-      .main .row .slider .slide:nth-child(13) {
+      .home .row .slider .slide:nth-child(13) {
         background-image: url("../images/aikido_20141209_82548.jpg");
         animation-delay: 60s; }
 @keyframes next-slide {
@@ -79,48 +90,50 @@
     opacity: 0; }
   10% {
     opacity: 1; }
-  30% {
+  80% {
     opacity: 0; } }
-    .main .row .right_side {
-      margin: 0 auto;
-      background-color: black; }
-      .main .row .right_side .baner {
-        height: 28em;
-        width: 100%;
-        background-color: black;
+    .home .row .right_side {
+      height: 41em; }
+      @media (max-width: 780px) {
+        .home .row .right_side {
+          height: 40%; } }
+      .home .row .right_side .baner {
+        height: 65%;
         background-image: url("../images/aikido_pion.jpg");
         background-position: center;
         background-size: 46%;
         background-repeat: no-repeat; }
-        @media (max-width: 1000px) {
-          .main .row .right_side .baner {
-            background-image: url(../images/aikido_poziom.jpg);
-            background-size: 70%; } }
-        @media (max-width: 400px) {
-          .main .row .right_side .baner {
-            height: 7em; } }
-        @media (min-width: 401px) and (max-width: 600px) {
-          .main .row .right_side .baner {
-            height: 10em; } }
-        @media (min-width: 601px) and (max-width: 800px) {
-          .main .row .right_side .baner {
-            height: 17em; } }
-        @media (min-width: 801px) and (max-width: 1000px) {
-          .main .row .right_side .baner {
-            height: 23em; } }
-      .main .row .right_side .menu-wrapper {
-        width: 100%;
-        background-color: black;
-        height: 12em;
-        padding-left: 3em; }
+        @media (min-width: 501px) and (max-width: 780px) {
+          .home .row .right_side .baner {
+            background-image: url("../images/aikido_poziom.jpg"); } }
+        @media (max-width: 500px) {
+          .home .row .right_side .baner {
+            width: 50%;
+            height: 100%;
+            float: right;
+            margin-top: 3em; } }
+      .home .row .right_side .menu-wrapper {
+        height: 35%;
+        position: relative;
+        padding-left: 2em; }
+        @media (max-width: 450px) {
+          .home .row .right_side .menu-wrapper {
+            width: 50%;
+            height: 30%;
+            float: left;
+            margin-left: -2.5em;
+            margin-top: 1em;
+            position: fixed; } }
+        @media (min-width: 451px) and (max-width: 780px) {
+          .home .row .right_side .menu-wrapper {
+            width: 50%;
+            height: 30%;
+            float: left; } }
 
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.main .menu-wrapper {
-  position: relative; }
-.main .menu {
-  position: fixed;
+.home .menu {
   width: 2.25em;
   height: 0.375em;
   background-color: #FFF016;
@@ -132,7 +145,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-tap-highlight-color: transparent; }
-  .main .menu label {
+  .home .menu label {
     cursor: pointer;
     position: absolute;
     font-family: 'Raleway', sans-serif;
@@ -140,33 +153,36 @@
     line-height: 1.875em;
     top: -0.75em;
     left: 1.125em; }
-  .main .menu:hover > ul.nav-links, .main .menu.open > ul.nav-links {
+    @media (max-width: 780px) {
+      .home .menu label {
+        opacity: 0; } }
+  .home .menu:hover > ul.nav-links, .home .menu.open > ul.nav-links {
     transition: all 0.25s ease-in-out;
     opacity: 1;
     width: 11.25em;
     transform: translateX(15px);
     pointer-events: auto; }
-  .main .menu:after, .main .menu:before {
+  .home .menu:after, .home .menu:before {
     content: "";
     position: absolute;
     width: 2.25em;
     height: 0.375em;
     background-color: #FFF016;
     transition: all 0.25s ease-in-out; }
-  .main .menu:after {
+  .home .menu:after {
     top: 0.75em; }
-  .main .menu:before {
+  .home .menu:before {
     top: -0.75em; }
-  .main .menu:hover, .main .menu.open {
+  .home .menu:hover, .home .menu.open {
     background-color: transparent; }
-  .main .menu:hover::after, .main .menu:hover::before, .main .menu.open::after, .main .menu.open::before {
+  .home .menu:hover::after, .home .menu:hover::before, .home .menu.open::after, .home .menu.open::before {
     transition: all 0.3s ease-in-out;
     width: 1.125em; }
-  .main .menu:hover::after, .main .menu.open::after {
+  .home .menu:hover::after, .home .menu.open::after {
     transform: translate(0.1875em, -7px) rotate(405deg); }
-  .main .menu:hover::before, .main .menu.open::before {
+  .home .menu:hover::before, .home .menu.open::before {
     transform: translate(0.75em, 17px) rotate(-405deg); }
-  .main .menu ul.nav-links {
+  .home .menu ul.nav-links {
     margin: 0;
     padding: 2.25em 0 0 0;
     opacity: 0;
@@ -176,7 +192,7 @@
     width: 0;
     height: 0;
     pointer-events: none; }
-    .main .menu ul.nav-links li {
+    .home .menu ul.nav-links li {
       width: 100%;
       padding: 4px 8px;
       list-style-type: none;
@@ -185,12 +201,11 @@
       text-transform: uppercase;
       transition: all 0.25s ease-in-out;
       border-left: 2px solid #FFF016; }
-      .main .menu ul.nav-links li:hover, .main .menu ul.nav-links li.active {
+      .home .menu ul.nav-links li:hover, .home .menu ul.nav-links li.active {
         color: white;
         border-left: 2px solid white; }
 
 .aikido {
-  background-color: black;
   width: 100%;
   height: 71em;
   font-family: "Lobster Two", cursive;
@@ -225,4 +240,8 @@
 [class*="col-"] {
   min-height: 1em; }
 
-/*# sourceMappingURL=aikido.css.map */
+body {
+  background-color: black;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */
