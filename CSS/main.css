@@ -1,247 +1,344 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400italic);
-.home {
-  width: auto;
-  height: 41em; }
-  .home .row {
+header {
+  width: 100%;
+  max-width: 1200px;
+  height: 70vw; }
+  header .slider, header .slide {
     width: 100%;
-    height: 41em;
-    margin: 0 auto; }
-    .home .row .slider {
-      height: 100%; }
-      @media (max-width: 780px) {
-        .home .row .slider {
-          height: 80%; } }
-      @media (max-width: 650px) {
-        .home .row .slider {
-          height: 60%; } }
-      @media (max-width: 440px) {
-        .home .row .slider {
-          height: 45%; } }
-      .home .row .slider .slide {
-        position: absolute;
-        left: -0.1em;
-        height: 100%;
-        width: 100%;
-        background-position: top center;
-        background-size: contain;
+    height: 70vw; }
+  header .slide {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation-name: next-slide;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; }
+    header .slide p {
+      color: #010101;
+      font-size: 2.5rem;
+      font-weight: bold;
+      padding: 0.2em 0 0 0.2em; }
+  header .slide:first-child {
+    background-image: url("../images/aikido_20141209_81133.jpg");
+    animation-delay: 0s; }
+  header .slide:nth-child(2) {
+    background-image: url("../images/aikido_20141209_81186.jpg");
+    animation-delay: 5s; }
+  header .slide:nth-child(3) {
+    background-image: url("../images/aikido_20141209_81254.jpg");
+    animation-delay: 10s; }
+  header .slide:nth-child(4) {
+    background-image: url("../images/aikido_20141209_81295.jpg");
+    animation-delay: 15s; }
+  header .slide:nth-child(5) {
+    background-image: url("../images/aikido_20141209_81355.jpg");
+    animation-delay: 20s; }
+  header .slide:nth-child(6) {
+    background-image: url("../images/aikido_20141209_81461.jpg");
+    animation-delay: 25s; }
+  header .slide:nth-child(7) {
+    background-image: url("../images/aikido_20141209_81734.jpg");
+    animation-delay: 30s; }
+  header .slide:nth-child(8) {
+    background-image: url("../images/aikido_20141209_81915.jpg");
+    animation-delay: 35s; }
+  header .slide:nth-child(9) {
+    background-image: url("../images/aikido_20141209_82054.jpg");
+    animation-delay: 40s; }
+  header .slide:nth-child(10) {
+    background-image: url("../images/aikido_20141209_82080.jpg");
+    animation-delay: 45s; }
+  header .slide:nth-child(11) {
+    background-image: url("../images/aikido_20141209_82210.jpg");
+    animation-delay: 50s; }
+  header .slide:nth-child(12) {
+    background-image: url("../images/aikido_20141209_82238.jpg");
+    animation-delay: 55s; }
+  header .slide:nth-child(13) {
+    background-image: url("../images/aikido_20141209_82548.jpg");
+    animation-delay: 60s; }
+@keyframes next-slide {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/*
+
+.home {
+  width:auto;
+  height:41em;    
+  
+    
+   .row {
+    width:100%;
+    height:41em;        
+    margin:0 auto;
+     
+      
+    
+      
+     .slider { 
+      
+      height:100%;
+            
+       .slide {
+        
+         position:absolute;
+         left:-0.1em;   
+         height:100%;
+         width:100%;
+       
+        background-position:top center;
+        background-size:contain;
         background-repeat: no-repeat;
+       
+       
         opacity: 0;
         animation-name: next-slide;
         animation-duration: 60s;
         animation-fill-mode: forwards;
-        animation-iteration-count: infinite; }
-      .home .row .slider h2 {
-        color: white;
-        font-size: 5rem;
-        opacity: 0.8;
-        padding: 0.3em;
-        font-family: 'Raleway', sans-serif; }
-        @media (max-width: 768px) {
-          .home .row .slider h2 {
-            font-size: 3rem; } }
-        .home .row .slider h2 span {
-          color: #EBE265;
-          padding-left: 0.5em; }
-      .home .row .slider p {
-        color: #fff016;
-        font-size: 2.5rem;
-        padding: 1em; }
-      .home .row .slider .slide:first-child {
-        background-image: url("../images/aikido_20141209_81133.jpg");
-        animation-delay: 0s; }
-      .home .row .slider .slide:nth-child(2) {
-        background-image: url("../images/aikido_20141209_81186.jpg");
-        animation-delay: 5s; }
-      .home .row .slider .slide:nth-child(3) {
-        background-image: url("../images/aikido_20141209_81254.jpg");
-        animation-delay: 10s; }
-      .home .row .slider .slide:nth-child(4) {
-        background-image: url("../images/aikido_20141209_81295.jpg");
-        animation-delay: 15s; }
-      .home .row .slider .slide:nth-child(5) {
+        animation-iteration-count: infinite;
+       }
+         
+          & h2 {
+          
+           color: white;
+           font-size:5rem;
+           opacity:0.8;
+           padding:0.3em;
+           font-family: 'Raleway', sans-serif;
+           
+           @media (max-width:768px){
+               font-size:3rem;
+           }
+         @media (max-width:450px){
+               font-size:1rem;
+           }
+           
+           span{
+               color: #EBE265;
+               padding-left:0.5em;
+           }  
+            
+       }
+          & p {
+               color:$color;
+               font-size:2.5rem;        
+               padding:1em;
+                 @media (max-width:768px){
+               font-size:1.5rem;
+                     color:black;
+               }
+              @media (max-width:450px){
+               font-size:1.3rem;
+                  color:black;
+               }
+              
+            
+           }
+
+      .slide:first-child {
+        background-image:url("../images/aikido_20141209_81133.jpg"); 
+            animation-delay: 0s;
+        }
+      .slide:nth-child(2) {
+       background-image: url("../images/aikido_20141209_81186.jpg");  
+             animation-delay: 5s;
+        }
+      .slide:nth-child(3) {
+        background-image:url("../images/aikido_20141209_81254.jpg"); 
+             animation-delay: 10s;
+        }
+      .slide:nth-child(4) {
+          background-image: url("../images/aikido_20141209_81295.jpg");
+             animation-delay: 15s;
+        }
+       .slide:nth-child(5) {
         background-image: url("../images/aikido_20141209_81355.jpg");
-        animation-delay: 20s; }
-      .home .row .slider .slide:nth-child(6) {
-        background-image: url("../images/aikido_20141209_81461.jpg");
-        animation-delay: 25s; }
-      .home .row .slider .slide:nth-child(7) {
-        background-image: url("../images/aikido_20141209_81734.jpg");
-        animation-delay: 30s; }
-      .home .row .slider .slide:nth-child(8) {
-        background-image: url("../images/aikido_20141209_81915.jpg");
-        animation-delay: 35s; }
-      .home .row .slider .slide:nth-child(9) {
-        background-image: url("../images/aikido_20141209_82054.jpg");
-        animation-delay: 40s; }
-      .home .row .slider .slide:nth-child(10) {
-        background-image: url("../images/aikido_20141209_82080.jpg");
-        animation-delay: 45s; }
-      .home .row .slider .slide:nth-child(11) {
-        background-image: url("../images/aikido_20141209_82210.jpg");
-        animation-delay: 50s; }
-      .home .row .slider .slide:nth-child(12) {
-        background-image: url("../images/aikido_20141209_82238.jpg");
-        animation-delay: 55s; }
-      .home .row .slider .slide:nth-child(13) {
-        background-image: url("../images/aikido_20141209_82548.jpg");
-        animation-delay: 60s; }
-@keyframes next-slide {
-  0% {
-    opacity: 0; }
-  10% {
-    opacity: 1; }
-  80% {
-    opacity: 0; } }
-    .home .row .right_side {
-      height: 41em; }
-      @media (max-width: 780px) {
-        .home .row .right_side {
-          height: 40%; } }
-      .home .row .right_side .baner {
-        height: 65%;
-        background-image: url("../images/aikido_pion.jpg");
-        background-position: center;
-        background-size: 46%;
-        background-repeat: no-repeat; }
-        @media (min-width: 501px) and (max-width: 780px) {
-          .home .row .right_side .baner {
-            background-image: url("../images/aikido_poziom.jpg"); } }
-        @media (max-width: 500px) {
-          .home .row .right_side .baner {
-            width: 50%;
-            height: 100%;
-            float: right;
-            margin-top: 3em; } }
-      .home .row .right_side .menu-wrapper {
-        height: 35%;
-        position: relative;
-        padding-left: 2em; }
-        @media (max-width: 450px) {
-          .home .row .right_side .menu-wrapper {
-            width: 50%;
-            height: 30%;
-            float: left;
-            margin-left: -2.5em;
-            margin-top: 1em;
-            position: fixed; } }
-        @media (min-width: 451px) and (max-width: 780px) {
-          .home .row .right_side .menu-wrapper {
-            width: 50%;
-            height: 30%;
-            float: left; } }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-.home .menu {
-  width: 2.25em;
-  height: 0.375em;
-  background-color: #FFF016;
-  user-select: none;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
-  color: #FFF016;
-  -webkit-perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-tap-highlight-color: transparent; }
-  .home .menu label {
-    cursor: pointer;
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5em;
-    line-height: 1.875em;
-    top: -0.75em;
-    left: 1.125em; }
-    @media (max-width: 780px) {
-      .home .menu label {
-        opacity: 0; } }
-  .home .menu:hover > ul.nav-links, .home .menu.open > ul.nav-links {
-    transition: all 0.25s ease-in-out;
-    opacity: 1;
-    width: 11.25em;
-    transform: translateX(15px);
-    pointer-events: auto; }
-  .home .menu:after, .home .menu:before {
-    content: "";
-    position: absolute;
-    width: 2.25em;
-    height: 0.375em;
-    background-color: #FFF016;
-    transition: all 0.25s ease-in-out; }
-  .home .menu:after {
-    top: 0.75em; }
-  .home .menu:before {
-    top: -0.75em; }
-  .home .menu:hover, .home .menu.open {
-    background-color: transparent; }
-  .home .menu:hover::after, .home .menu:hover::before, .home .menu.open::after, .home .menu.open::before {
-    transition: all 0.3s ease-in-out;
-    width: 1.125em; }
-  .home .menu:hover::after, .home .menu.open::after {
-    transform: translate(0.1875em, -7px) rotate(405deg); }
-  .home .menu:hover::before, .home .menu.open::before {
-    transform: translate(0.75em, 17px) rotate(-405deg); }
-  .home .menu ul.nav-links {
-    margin: 0;
-    padding: 2.25em 0 0 0;
+             animation-delay: 20s;
+         }
+        .slide:nth-child(6) {
+          background-image: url("../images/aikido_20141209_81461.jpg");  
+             animation-delay: 25s;
+         }
+        .slide:nth-child(7) {
+         background-image: url("../images/aikido_20141209_81734.jpg");    
+            animation-delay: 30s;
+        }
+        .slide:nth-child(8) {
+          background-image: url("../images/aikido_20141209_81915.jpg");    
+             animation-delay: 35s;
+        }
+        .slide:nth-child(9) {
+             background-image: url("../images/aikido_20141209_82054.jpg");
+             animation-delay: 40s;
+      }
+        .slide:nth-child(10) {
+            background-image: url("../images/aikido_20141209_82080.jpg");
+             animation-delay: 45s;
+        }
+        .slide:nth-child(11) {
+            background-image: url("../images/aikido_20141209_82210.jpg");
+             animation-delay: 50s;
+         }
+        .slide:nth-child(12) {
+            background-image: url("../images/aikido_20141209_82238.jpg");
+             animation-delay: 55s;
+         }
+        .slide:nth-child(13) {
+            background-image: url("../images/aikido_20141209_82548.jpg");
+             animation-delay: 60s;
+         }
+        
+    @keyframes next-slide {
+     0% {
     opacity: 0;
-    transform: translateX(-15px);
-    transition: all 0.25s ease-in-out;
-    position: absolute;
-    width: 0;
-    height: 0;
-    pointer-events: none; }
-    .home .menu ul.nav-links li {
-      width: 100%;
-      padding: 4px 8px;
-      list-style-type: none;
-      font-family: 'Raleway', sans-serif;
-      font-size: 25px;
-      text-transform: uppercase;
-      transition: all 0.25s ease-in-out;
-      border-left: 2px solid #FFF016; }
-      .home .menu ul.nav-links li:hover, .home .menu ul.nav-links li.active {
-        color: white;
-        border-left: 2px solid white; }
-
-.aikido {
+    }
+     5% {
+     opacity: 1; 
+     }
+     100% {
+      opacity: 0;
+      }
+      } 
+      
+         img {
+             z-index:100;
+             width:4em;
+             height:4em;
+             position:absolute;
+             top:80%;
+             left:5%;
+             
+             
+            
+         }
+    }
+       
+    .right_side {
+     
+        
+      height:41em;
+     
+        @media (max-width:780px){
+            height:40%;
+        }
+          
+   
+       
+       .baner{
+           
+        height:65%;
+       
+        background-image:url("../images/aikido_pion.jpg");
+        background-position: center;
+        background-size:46%;
+        background-repeat: no-repeat;
+            
+          @media (min-width:501px) and (max-width:780px){
+                background-image:url("../images/aikido_poziom.jpg");
+           }
+           
+           @media (max-width:500px){
+            
+                width:50%;
+                height:100%;
+                float:right;
+                margin-top:3em;
+                
+           }
+         
+         }
+        
+        .menu-wrapper { //hamburger menu
+            
+            height:35%;
+            position:relative;
+           
+           
+            z-index:5;
+           
+            padding-left:2em;
+            padding-top:2em;
+            @media (max-width:450px){
+                width:50%;
+                height:30%;
+                float:left;
+                margin-left:-2.5em;
+                margin-top:2em;
+                position:fixed;
+               
+            }
+              @media (min-width:451px) and  (max-width:780px){
+                width:50%;
+                height:30%;
+                float:left;
+                               
+               
+            }
+         }
+   }
+ }
+}*/
+.about {
   width: 100%;
-  height: 71em;
-  font-family: "Lobster Two", cursive;
-  font-weight: lighter; }
-  .aikido .master {
-    position: relative; }
-    .aikido .master img {
-      padding: 1em;
-      width: 8em;
-      height: 10em; }
-    .aikido .master header {
-      display: inline;
-      padding: 1em;
-      position: absolute;
-      font-family: sans-serif; }
-    .aikido .master p {
-      font-size: 1.2em;
-      padding-left: 1em; }
-  .aikido header {
-    color: #FFF016;
-    padding-top: 1.5em;
-    font-size: 2em;
-    text-align: center; }
-  .aikido p {
-    color: white;
-    padding: 1em;
-    text-align: justify;
-    text-indent: 2em;
-    font-size: 1.5em;
-    line-height: 1.5em; }
+  height: 70vw;
+  margin: 0 auto; }
+  .about .baner img {
+    width: 20%;
+    height: 20%;
+    padding: 1em 0 0 0.5em;
+    float: left; }
+  .about article {
+    float: left;
+    padding: 1em 0 0 0.8em; }
+    .about article h1 {
+      font-size: 1.9rem;
+      color: red;
+      padding: 0.1em 0 0.1em 0;
+      font-weight: 900; }
+    .about article h2 {
+      padding: 0.5em 0 0.5em 0;
+      text-transform: uppercase;
+      color: yellow; }
+    .about article p {
+      padding: 0.3em 0 0.3em 0;
+      text-align: left; }
+      .about article p:last-child {
+        color: yellow;
+        padding: 1em; }
 
-[class*="col-"] {
-  min-height: 1em; }
+footer ul {
+  border-top: 1px solid red;
+  margin: 0 auto;
+  margin-top: -0.8em; }
+  footer ul a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 0.5em;
+    text-decoration: none; }
+    footer ul a:hover {
+      color: red; }
+footer .logo img {
+  width: 12%;
+  height: 16%;
+  border-radius: 50%;
+  margin: 0.5em;
+  margin-left: 15em;
+  margin-top: 1em; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-  background-color: black;
-  box-sizing: border-box; }
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  background-color: #010101;
+  font-size: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */

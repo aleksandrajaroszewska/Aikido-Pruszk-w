@@ -1,7 +1,106 @@
+header {
+    width:100%;
+    max-width:1200px;
+    height:70vw;
+   
+   .slider, .slide {
+        
+        width:100%;
+        height:70vw;
+        
+       
+    }
+    
+    .slide {
+        position:absolute;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        
+        opacity: 0;
+        animation-name: next-slide;
+        animation-duration: 60s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        p {
+           color:#010101;
+           font-size:2.5rem;
+           font-weight:bold; 
+            padding:0.2em 0 0 0.2em;
+        }
+        
+        
+    }
+    
+      .slide:first-child {
+        background-image:url("../images/aikido_20141209_81133.jpg"); 
+            animation-delay: 0s;
+        }
+      .slide:nth-child(2) {
+       background-image: url("../images/aikido_20141209_81186.jpg");  
+             animation-delay: 5s;
+        }
+      .slide:nth-child(3) {
+        background-image:url("../images/aikido_20141209_81254.jpg"); 
+             animation-delay: 10s;
+        }
+      .slide:nth-child(4) {
+          background-image: url("../images/aikido_20141209_81295.jpg");
+             animation-delay: 15s;
+        }
+      .slide:nth-child(5) {
+        background-image: url("../images/aikido_20141209_81355.jpg");
+             animation-delay: 20s;
+         }
+        .slide:nth-child(6) {
+          background-image: url("../images/aikido_20141209_81461.jpg");  
+             animation-delay: 25s;
+         }
+        .slide:nth-child(7) {
+         background-image: url("../images/aikido_20141209_81734.jpg");    
+            animation-delay: 30s;
+        }
+        .slide:nth-child(8) {
+          background-image: url("../images/aikido_20141209_81915.jpg");    
+             animation-delay: 35s;
+        }
+        .slide:nth-child(9) {
+             background-image: url("../images/aikido_20141209_82054.jpg");
+             animation-delay: 40s;
+      }
+        .slide:nth-child(10) {
+            background-image: url("../images/aikido_20141209_82080.jpg");
+             animation-delay: 45s;
+        }
+        .slide:nth-child(11) {
+            background-image: url("../images/aikido_20141209_82210.jpg");
+             animation-delay: 50s;
+         }
+        .slide:nth-child(12) {
+            background-image: url("../images/aikido_20141209_82238.jpg");
+             animation-delay: 55s;
+         }
+        .slide:nth-child(13) {
+            background-image: url("../images/aikido_20141209_82548.jpg");
+             animation-delay: 60s;
+         }
 
-$color: #fff016;
 
+@keyframes next-slide {
+      0% {
+       opacity: 0;
+      }
+      5% {
+       opacity: 1; 
+      }
+      100% {
+      opacity: 0;
+      }
+ } 
 
+}
+
+/*
 
 .home {
   width:auto;
@@ -19,23 +118,7 @@ $color: #fff016;
      .slider { 
       
       height:100%;
-        
-         
-         @media  (max-width:780px){
-             height:80%;
-         }
-         
-         @media (max-width:650px){
-             height:60%;
-         }
-         
-         @media (max-width:440px){
-             height:45%;
-         }
-         
-     
-      
-       
+            
        .slide {
         
          position:absolute;
@@ -66,6 +149,9 @@ $color: #fff016;
            @media (max-width:768px){
                font-size:3rem;
            }
+         @media (max-width:450px){
+               font-size:1rem;
+           }
            
            span{
                color: #EBE265;
@@ -77,6 +163,14 @@ $color: #fff016;
                color:$color;
                font-size:2.5rem;        
                padding:1em;
+                 @media (max-width:768px){
+               font-size:1.5rem;
+                     color:black;
+               }
+              @media (max-width:450px){
+               font-size:1.3rem;
+                  color:black;
+               }
               
             
            }
@@ -134,18 +228,29 @@ $color: #fff016;
              animation-delay: 60s;
          }
         
-@keyframes next-slide {
-   0% {
+    @keyframes next-slide {
+     0% {
     opacity: 0;
-   }
-   10% {
-    opacity: 1; 
-   }
-   80% {
-    opacity: 0;
-   }
-} 
-        
+    }
+     5% {
+     opacity: 1; 
+     }
+     100% {
+      opacity: 0;
+      }
+      } 
+      
+         img {
+             z-index:100;
+             width:4em;
+             height:4em;
+             position:absolute;
+             top:80%;
+             left:5%;
+             
+             
+            
+         }
     }
        
     .right_side {
@@ -183,20 +288,22 @@ $color: #fff016;
          
          }
         
-        .menu-wrapper {
+        .menu-wrapper { //hamburger menu
             
             height:35%;
             position:relative;
            
-          
+           
+            z-index:5;
            
             padding-left:2em;
+            padding-top:2em;
             @media (max-width:450px){
                 width:50%;
                 height:30%;
                 float:left;
                 margin-left:-2.5em;
-                margin-top:1em;
+                margin-top:2em;
                 position:fixed;
                
             }
@@ -204,11 +311,10 @@ $color: #fff016;
                 width:50%;
                 height:30%;
                 float:left;
-                  
-               
+                               
                
             }
          }
    }
  }
-}
+}*/
