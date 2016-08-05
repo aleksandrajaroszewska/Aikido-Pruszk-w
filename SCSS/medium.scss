@@ -1,0 +1,57 @@
+@media only screen and ( min-width:30.5em ) {
+     
+    header {
+       
+        height:100vh;   
+        .slider, .slide {
+            
+            height:100vh;
+        }
+ 
+    }
+    
+    .about {
+        height:70vh;
+        .baner {
+          img{
+            display:none;
+         }
+        width:80%;
+        height:40%;
+        background-image: url(../images/aikido_poziom.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:contain;
+        margin-top:2em;    
+            
+        }
+           
+    
+    
+        article {
+             height:50%;
+             margin-left:2em;
+            
+             padding:1em;
+            p {
+                font-size: 2rem;
+            }
+          
+            
+            img {
+               margin-left:16em;
+                margin-top:-5em;
+        
+            }
+        
+        }
+       
+      
+            
+    }
+   footer{
+       height:30vh;
+   
+  
+    }
+}
