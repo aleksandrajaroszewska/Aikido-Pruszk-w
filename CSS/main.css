@@ -9,55 +9,55 @@ header {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     opacity: 0;
     animation-name: next-slide;
     animation-duration: 60s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite; }
     header .slide p {
-      color: #010101;
-      font-size: 2.5rem;
+      color: red;
+      font-size: 1.5rem;
       font-weight: bold;
       padding: 0.2em 0 0 0.2em; }
   header .slide:first-child {
-    background-image: url("../images/aikido_20141209_81133.jpg");
+    background-image: url("../images/pokaz.jpg");
     animation-delay: 0s; }
   header .slide:nth-child(2) {
-    background-image: url("../images/aikido_20141209_81186.jpg");
+    background-image: url("../images/olaRafal.jpg");
     animation-delay: 5s; }
   header .slide:nth-child(3) {
-    background-image: url("../images/aikido_20141209_81254.jpg");
+    background-image: url("../images/dzieci.jpg");
     animation-delay: 10s; }
   header .slide:nth-child(4) {
-    background-image: url("../images/aikido_20141209_81295.jpg");
+    background-image: url("../images/dorosli.jpg");
     animation-delay: 15s; }
   header .slide:nth-child(5) {
-    background-image: url("../images/aikido_20141209_81355.jpg");
+    background-image: url("../images/pad.jpg");
     animation-delay: 20s; }
   header .slide:nth-child(6) {
-    background-image: url("../images/aikido_20141209_81461.jpg");
+    background-image: url("../images/rafal.jpg");
     animation-delay: 25s; }
   header .slide:nth-child(7) {
-    background-image: url("../images/aikido_20141209_81734.jpg");
+    background-image: url("../images/pokaz2.jpg");
     animation-delay: 30s; }
   header .slide:nth-child(8) {
-    background-image: url("../images/aikido_20141209_81915.jpg");
+    background-image: url("../images/ola.jpg");
     animation-delay: 35s; }
   header .slide:nth-child(9) {
-    background-image: url("../images/aikido_20141209_82054.jpg");
+    background-image: url("../images/ksiazeczki.jpg");
     animation-delay: 40s; }
   header .slide:nth-child(10) {
-    background-image: url("../images/aikido_20141209_82080.jpg");
+    background-image: url("../images/skok.jpg");
     animation-delay: 45s; }
   header .slide:nth-child(11) {
-    background-image: url("../images/aikido_20141209_82210.jpg");
+    background-image: url("../images/pokaz3.jpg");
     animation-delay: 50s; }
   header .slide:nth-child(12) {
-    background-image: url("../images/aikido_20141209_82238.jpg");
+    background-image: url("../images/futariDori.jpg");
     animation-delay: 55s; }
   header .slide:nth-child(13) {
-    background-image: url("../images/aikido_20141209_82548.jpg");
+    background-image: url("../images/senoundo.jpg");
     animation-delay: 60s; }
 @keyframes next-slide {
   0% {
@@ -98,18 +98,81 @@ header {
       margin-top: 1.5em;
       margin-left: 7em; }
 
-footer ul {
+nav ul {
   border-top: 1px solid red;
+  height: 3em;
   margin: 0 auto;
-  margin-top: 2.8em; }
-  footer ul a {
+  margin-top: 3.8em; }
+  nav ul a {
     color: #FFFFFF;
     display: block;
     float: left;
     padding: 0.5em;
     text-decoration: none; }
-    footer ul a:hover {
+    nav ul a:hover {
       color: red; }
+
+.aboutUs {
+  margin: 1em;
+  margin-top: 3em; }
+  .aboutUs h3 {
+    color: yellow;
+    font-size: 2rem;
+    padding: 0 0 1em 1em; }
+  .aboutUs h4 {
+    color: red;
+    font-size: 1.7rem;
+    padding: 1em; }
+  .aboutUs p {
+    padding: 0.5em;
+    text-indent: 1.5em;
+    line-height: 1.3em; }
+    .aboutUs p span {
+      color: yellow; }
+  .aboutUs h5 {
+    color: red;
+    font-style: italic;
+    padding: 2em; }
+
+.pricing .prices, .pricing .discounts {
+  border: 1px solid red;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 1em; }
+  .pricing .prices .title, .pricing .discounts .title {
+    padding: 1em;
+    color: yellow;
+    font-size: 2.3rem; }
+  .pricing .prices td, .pricing .discounts td {
+    border: 1px solid yellow;
+    padding: 1em; }
+.pricing .discounts .title {
+  color: red; }
+.pricing h4 {
+  color: red;
+  padding: 1em;
+  text-align: center;
+  margin: 0 auto; }
+
+.photos {
+  margin: 0 auto;
+  margin-top: 2em; }
+  .photos h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: yellow; }
+  .photos h3 {
+    padding: 1em; }
+
+.news {
+  margin: 0 auto; }
+  .news h2 {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2em; }
+  .news p {
+    padding: 1em; }
 
 @media only screen and (min-width: 30.5em) {
   header {
@@ -139,7 +202,7 @@ footer ul {
         margin-left: 16em;
         margin-top: -5em; }
 
-  footer {
+  nav {
     height: 30vh; } }
 html {
   font-size: 62.5%;

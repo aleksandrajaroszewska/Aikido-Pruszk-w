@@ -15,84 +15,85 @@ header {
         position:absolute;
         background-repeat:no-repeat;
         background-size: cover;
-        background-position:center;
+        background-position:top;
         
-        opacity: 0;
+        opacity:0;
         animation-name: next-slide;
         animation-duration: 60s;
-        animation-fill-mode: forwards;
+        animation-fill-mode:forwards;
         animation-iteration-count: infinite;
         p {
-           color:#010101;
-           font-size:2.5rem;
+           color:red;
+           font-size:1.5rem;
            font-weight:bold; 
-            padding:0.2em 0 0 0.2em;
+           padding:0.2em 0 0 0.2em;
         }
         
         
     }
     
       .slide:first-child {
-        background-image:url("../images/aikido_20141209_81133.jpg"); 
+        background-image:url("../images/pokaz.jpg"); 
             animation-delay: 0s;
         }
       .slide:nth-child(2) {
-       background-image: url("../images/aikido_20141209_81186.jpg");  
-             animation-delay: 5s;
+       background-image: url("../images/olaRafal.jpg");  
+            animation-delay: 5s;
         }
       .slide:nth-child(3) {
-        background-image:url("../images/aikido_20141209_81254.jpg"); 
+        background-image:url("../images/dzieci.jpg"); 
              animation-delay: 10s;
         }
       .slide:nth-child(4) {
-          background-image: url("../images/aikido_20141209_81295.jpg");
-             animation-delay: 15s;
+          background-image: url("../images/dorosli.jpg");
+            animation-delay: 15s;
         }
       .slide:nth-child(5) {
-        background-image: url("../images/aikido_20141209_81355.jpg");
-             animation-delay: 20s;
+        background-image: url("../images/pad.jpg");
+            animation-delay: 20s;
          }
         .slide:nth-child(6) {
-          background-image: url("../images/aikido_20141209_81461.jpg");  
+          background-image: url("../images/rafal.jpg");  
              animation-delay: 25s;
          }
         .slide:nth-child(7) {
-         background-image: url("../images/aikido_20141209_81734.jpg");    
+         background-image: url("../images/pokaz2.jpg");    
             animation-delay: 30s;
         }
         .slide:nth-child(8) {
-          background-image: url("../images/aikido_20141209_81915.jpg");    
+          background-image: url("../images/ola.jpg");    
              animation-delay: 35s;
         }
         .slide:nth-child(9) {
-             background-image: url("../images/aikido_20141209_82054.jpg");
+             background-image: url("../images/ksiazeczki.jpg");
              animation-delay: 40s;
       }
         .slide:nth-child(10) {
-            background-image: url("../images/aikido_20141209_82080.jpg");
+            background-image: url("../images/skok.jpg");
              animation-delay: 45s;
         }
         .slide:nth-child(11) {
-            background-image: url("../images/aikido_20141209_82210.jpg");
+            background-image: url("../images/pokaz3.jpg");
              animation-delay: 50s;
          }
         .slide:nth-child(12) {
-            background-image: url("../images/aikido_20141209_82238.jpg");
+            background-image: url("../images/futariDori.jpg");
              animation-delay: 55s;
          }
         .slide:nth-child(13) {
-            background-image: url("../images/aikido_20141209_82548.jpg");
+            background-image: url("../images/senoundo.jpg");
              animation-delay: 60s;
          }
-
+       
 
 @keyframes next-slide {
       0% {
        opacity: 0;
       }
-      5% {
-       opacity: 1; 
+     5%{
+        opacity:1;
       }
+     
       100% {
       opacity: 0;
       }
