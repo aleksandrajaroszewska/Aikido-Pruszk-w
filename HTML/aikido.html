@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Aikido Pruszkow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script type ="text/javascript" src="../JS/aikido.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/reset.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="../CSS/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
 </head>
 <body>
     <header>
@@ -31,16 +35,16 @@
        <aside class="baner">
            <img src="../images/aikido_pion.jpg" title="baner aikido pruszków">
        </aside>
-       <article>   
-           <h1>Kościuszki 38 </h2>
+       <article>
+           <span>Treningi</span>    
+           <h1>Pruszków    Kościuszki 38 </h2>
            <h2>wtorek i czwartek</h3>
            <p>dzieci młodsze: 18.15 - 19.00</p>
            <p>dzieci starsze: 19.00 - 19.45</p>
            <p>dorośli: 19.50 - 21.20</p>
-           <img class="logo" src="../images/Logo_WCA-1.png" title="logo warszawskiego centrum aikido">     
-           
+           <p>tel. 530 145 350</p>  
        </article> 
-      
+        <img class="logo" src="../images/Logo_WCA-1.png" title="logo warszawskiego centrum aikido">    
     </section>
     <nav>
         <ul>
@@ -51,25 +55,31 @@
         </ul>     
     </nav>
     <section class="aboutUs">
-      <h3>Aikido w Pruszkowie</h3> 
-        <div>
+      
+        <div class="column">
+          <h3>Aikido w Pruszkowie</h3> 
           <p>Nasza sekcja istnieje w Pruszkowie od września 2010 roku. Treningi prowadzi <span>Rafał Jaroszewski 3DAN Aikido</span>.</p>
-          <p>Jesteśmy częścią Warszawskiego Centrum Aikido.  Aikido, którego uczymy należy do linii Kobayashi</p>
-          <p> Ćwiczą z nami dzieci od 6 roku życia podzielone na dwie grupy młodszą i starszą oraz dorośli</p></div>
-       <h4>Treningi dzieci</h4> 
-        <div>
-          <p> <span>Ćwicząc z najmłodszymi</span> największy nacisk kładziemy na ich rozwój ruchowy i dobrą zabwę. Na tym etapie zależy nam przede wszystkim by dzieci przyzwyczaiły się do ruchu i go polubiły tak by w dorosłym życiu nawet jak nie zostaną Aikidokami były zdrowe i sprawne </p>
-          <p> <span>Grupa dziecięca strasza</span> uczy się już Aikido jednak techniki są dostosowane do wieku dzieci a aspekt ogólnorozwojowy jest cały czas ważnym elementem treningu.</p>
-          <p> Poza rozwojem ruchowym Aikido uczy dzieci współpracy w grupie, umiejętności przegrywania i koncentracji. </p> 
+          <p>Jesteśmy częścią Warszawskiego Centrum Aikido.  Aikido, którego uczymy należy do linii Kobayashi.</p>
+          <p> Ćwiczą z nami dzieci od 6 roku życia podzielone na dwie grupy młodszą i starszą oraz dorośli.</p></div>
+       
+        <div class="column">
+          <h4>Treningi dzieci</h4> 
+          <p> <span>Ćwicząc z najmłodszymi</span> największy nacisk kładziemy na ich rozwój ruchowy i dobrą zabwę. Zależy nam przede wszystkim by dzieci przyzwyczaiły się do ruchu i go polubiły, tak by w dorosłym życiu, nawet jak nie zostaną Aikidokami, były zdrowe i sprawne. </p>
+          <p> <span>Grupa dziecięca strasza</span> uczy się już Aikido, jednak techniki są dostosowane do wieku dzieci a aspekt ogólnorozwojowy jest cały czas ważnym elementem treningu.</p>
+          <p> Poza rozwojem ruchowym Aikido uczy dzieci współpracy w grupie, wytrwałości i  koncentracji. </p> 
         </div> 
-        <h4>Treningi dorosłych </h4>
-       <div>
-          <p>Przeznaczone są dla osób w różnym wieku i nie tylko dla fascynatów sztuk walki. <span>Trening Aikido</span> oprócz nauki techniki jest ciekawą formą pracy nas sprawnością fizyczną i rozwojem ruchowym. Pozwala odreagować stres życia codziennego, spędzić miło czas w przyjaznej atmosferze i przy okazji nabyć nowych umiejętności</p>
-          <p>Nie każdy kto przyjdzie na zajęcia zostanie mistrzem ale każdy ma szansę trzeba tylko przyjść i zacząc trenować </p></div>
-         <h5>zapraszamy</h5>   
+        
+       <div class="column">
+          <h4>Treningi dorosłych </h4>
+          <p>Przeznaczone są dla osób w różnym wieku, nie tylko dla fascynatów sztuk walki. <span>Trening Aikido</span> oprócz nauki techniki jest ciekawą formą pracy nas sprawnością fizyczną, pozwala odreagować stres życia codziennego, spędzić miło czas w przyjaznej atmosferze jedocześnie  nabywając nowych umiejętności.</p>
+          <p class="master">Nie każdy kto przyjdzie na zajęcia zostanie mistrzem ale każdy ma szansę trzeba tylko przyjść i zacząc trenować </p>
+          <h5>zapraszamy</h5>   
+          </div>
+         
     </section>
     <section class="pricing">
-        <table class="prices">
+        <h4>Pierwszy trening gratis</h4>
+        <table class="prices"> 
            <caption class="title">Karnety</caption>
             <tr><td>1 trening</td><td>40zł</td></tr>
             <tr><td>4 treningi</td><td>100zł</td></tr>
@@ -77,22 +87,67 @@
             <tr><td>kwartał</td><td>450zł</td></tr>
             <tr><td>10 miesięcy</td><td>1350zł</td></tr>
         </table>
-        <h4>Pierwszy trening gratis</h4>
+       
         <table class="discounts">
            <caption class="title">Zniżki rodzinne</caption>
             <tr><td>2 osoby</td><td>150zł/os</td></tr>
             <tr><td>2 osoby 4 treningi </td><td>80zł/os</td></tr>
             <tr><td>3 osoby i więcej</td><td>120zł/os</td></tr>
-            <tr><td>3 osoby 4 treningi</td><td>65zł/os</td></tr>
+            <tr><td>3 osoby 4 treningi</td><td>65zł/os</td></tr>  
         </table>
-        <h4>Nie akceptujemy kart Benefit Multisport</h4>
+         <h4>Akceptujemy kartę OK system</h4>
     </section>
     <section class="photos">
         <h2>nasze zdjęcia</h2>
-        <h3>aikido w Pruszkowie</h3>
-        <h3>pokazy Aikido</h3>
-        <h3>obozy i staże Aikido</h3>
-        <h3>zdjęcia sprzed lat</h3>
+        <div class="buttonWrapper">
+        <button class="childrenButton" "buttonColor">dzieci</button>
+        <button class="adultsButton" "buttonColor">dorośli</button>
+        <button class="restButton" "buttonColor">staże</button>
+        </div>  
+            <div class="children">
+               <figure><img class="hidden" src="../images/trening/dzieci/aikido_20141209_80864.JPG" alt="" ></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/DSC09421.JPG"></figure>
+              
+                <figure><img class="hidden" src="../images/trening/dzieci/DSC09507.JPG"></figure>
+               <figure> <img class="hidden" src="../images/trening/dzieci/aikido_20141209_80627.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/ksiazeczki.jpg"></figure>
+                  <figure><img class="hidden" src="../images/trening/dzieci/DSC09437.JPG"></figure>
+               
+                <figure><img class="hidden" src="../images/trening/dzieci/aikido_20141209_80401.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060690.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060692.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060704.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060734.JPG"></figure> 
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060735.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060752.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060756.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060815.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dzieci/P1060822.JPG"></figure>   
+            </div>
+            <div class="adults">
+                <figure><img class="hidden" src="../images/trening/dorosli/aikido_20141209_82252.jpg" alt="" ></figure>
+               <figure> <img class="hidden" src="../images/trening/dorosli/DSC09646.JPG"></figure>
+                <figure><img class="hidden" src="../images/trening/dorosli/ola.jpg"></figure>
+                <figure><img class="hidden" src="../images/trening/dorosli/futariDori.jpg"></figure>
+                <figure><img class="hidden" src="../images/trening/dorosli/rafal.jpg"></figure>
+                <figure><img class="hidden" src="../images/trening/dorosli/senoundo.jpg"></figure>
+                <figure><img class="hidden" src="../images/trening/dorosli/skok.jpg"></figure>
+                
+            </div>
+             <div class="rest">
+                <figure><img class="hidden" src="../images/staze_obozy/ola_rafal_sav_2006.jpg" alt="" ></figure>
+               <figure> <img class="hidden" src="../images/staze_obozy/savegnago_2005.JPG"></figure>
+                <figure><img class="hidden" src="../images/staze_obozy/riondet_2015.JPG"></figure>
+                <figure><img class="hidden" src="../images/staze_obozy/wysocki_2004.JPG"></figure>
+                <figure><img class="hidden" src="../images/najstarsze/bernashewice_2001%20(2).jpg"></figure>
+                <figure><img class="hidden" src="../images/najstarsze/savegnago_rafal_2002.JPG"></figure>
+                <figure><img class="hidden" src="../images/najstarsze/wysocki_ola_2003.JPG"></figure>
+                 <figure><img class="hidden" src="../images/staze_obozy/leman_2004.jpg"></figure>
+                 <figure><img class="hidden" src="../images/staze_obozy/leman_2010.jpg"></figure>
+                 <figure><img class="hidden" src="../images/staze_obozy/mikoszewo_sandra.jpg"></figure>
+                 <figure><img class="hidden" src="../images/staze_obozy/mikoszewo_2016.JPG"></figure>
+             </div>
+       
     </section>
     <section class="news">
         <h2>Aktualności</h2>

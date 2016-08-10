@@ -8,50 +8,159 @@
             height:100vh;
         }
  
-    }
-    
+    }   
     .about {
-        height:70vh;
+       
         .baner {
+           
           img{
             display:none;
          }
-        width:80%;
-        height:40%;
-        background-image: url(../images/aikido_poziom.jpg);
-        background-repeat: no-repeat;
-        background-position:center;
-        background-size:contain;
-        margin-top:2em;    
+        
             
         }
            
-    
-    
         article {
+
+            position:absolute;
+            top:0.1em;
+            z-index:800;
              height:50%;
+             width:50%;
              margin-left:2em;
-            
              padding:1em;
-            p {
+           
+            
+            
+            
+            span { 
+                display:inline;
+                font-size:3.5rem;
+                font-weight:bold;
+                color:red;
+               
+            }
+            
+            h1, h2, p {
+                opacity:0;
+                
+            }
+            
+            &:hover {
+                h1, h2, p {
+                    opacity:1;
+                    background-color:rgba(0, 0, 0, 0.3);
+                    
+                    
+                    
+                }
+            }
+            h1 {
+                margin-top:2em;
+            }
+          p {
                 font-size: 2rem;
             }
+           
           
-            
-            img {
-               margin-left:16em;
-                margin-top:-5em;
         
-            }
+        }   
+        .logo {
+               margin-left:40em;
+               margin-top:3em;
+               z-index:200;
+               
         
-        }
-       
-      
-            
+            }    
     }
    nav {
-       height:30vh;
-   
+       position:fixed;
+       top:70%;
+       z-index:1000;
+       width:100%;
+       
+       ul {
+           position:absolute;
+           width:100%;
+           padding-left:3em;
+           
+       
+           
+           a {
+               font-size:2.5rem;
+               color:white;
+           }
+          
+       }
+       
+       
   
     }
+    .aboutUs {
+        margin-top:-7em;;
+        
+        
+        .column {
+           
+            float:left;
+            width:30%;
+            padding:0.5em;
+            
+            .master {
+                
+              font-family: 2rem;
+              color:yellow;
+             text-transform: uppercase;
+        
+            }
+            
+            p {
+                padding:1em;
+            }
+            
+           h5 {
+                padding:2em;
+                font-style: italic;
+                font-size:3rem;
+            }  
+           
+        }
+        
+        
+    }
+    
+    .pricing {
+        height:100vh;
+        width:100%;
+        clear:both;
+        margin-top:7em;
+        border:1px solid blue;
+       
+        h4 {
+            font-size:2.5rem;
+            margin-top:1em;
+        }
+        
+        
+        
+       
+        
+        .prices, .discounts {
+            float:left;
+             margin:3em;
+        }
+    }
+    
+    .photos {
+        clear:both;
+        
+        img{
+            width:50%;
+            height:50%;
+            float:left;
+        }
+        
+      
+    }
+    
 }

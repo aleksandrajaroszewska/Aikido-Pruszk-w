@@ -11,59 +11,60 @@ header {
     background-size: cover;
     background-position: top;
     opacity: 0;
-    animation-name: next-slide;
-    animation-duration: 60s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite; }
+    -webkit-animation-name: next-slide;
+    -webkit-animation-duration: 52s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite; }
     header .slide p {
       color: red;
       font-size: 1.5rem;
       font-weight: bold;
       padding: 0.2em 0 0 0.2em; }
   header .slide:first-child {
-    background-image: url("../images/pokaz.jpg");
+    background-image: url("../images/slider/aikido_20141209_80522.JPG");
     animation-delay: 0s; }
   header .slide:nth-child(2) {
-    background-image: url("../images/olaRafal.jpg");
-    animation-delay: 5s; }
+    background-image: url("../images/slider/berek.jpg");
+    animation-delay: 4s; }
   header .slide:nth-child(3) {
-    background-image: url("../images/dzieci.jpg");
-    animation-delay: 10s; }
+    background-image: url("../images/slider/DSC09459.JPG");
+    animation-delay: 8s; }
   header .slide:nth-child(4) {
-    background-image: url("../images/dorosli.jpg");
-    animation-delay: 15s; }
+    background-image: url("../images/slider/DSC09646.JPG");
+    animation-delay: 12s; }
   header .slide:nth-child(5) {
-    background-image: url("../images/pad.jpg");
-    animation-delay: 20s; }
+    background-image: url("../images/slider/P1060657.JPG");
+    animation-delay: 16s; }
   header .slide:nth-child(6) {
-    background-image: url("../images/rafal.jpg");
-    animation-delay: 25s; }
+    background-image: url("../images/slider/P1060661.JPG");
+    animation-delay: 20s; }
   header .slide:nth-child(7) {
-    background-image: url("../images/pokaz2.jpg");
-    animation-delay: 30s; }
+    background-image: url("../images/slider/pokaz.jpg");
+    animation-delay: 24s; }
   header .slide:nth-child(8) {
-    background-image: url("../images/ola.jpg");
-    animation-delay: 35s; }
+    background-image: url("../images/slider/pokaz2.jpg");
+    animation-delay: 28s; }
   header .slide:nth-child(9) {
-    background-image: url("../images/ksiazeczki.jpg");
-    animation-delay: 40s; }
+    background-image: url("../images/slider/pokaz3.jpg");
+    animation-delay: 32s; }
   header .slide:nth-child(10) {
-    background-image: url("../images/skok.jpg");
-    animation-delay: 45s; }
+    background-image: url("../images/slider/wianki_2013.JPG");
+    animation-delay: 36s; }
   header .slide:nth-child(11) {
-    background-image: url("../images/pokaz3.jpg");
-    animation-delay: 50s; }
+    background-image: url("../images/slider/pad.jpg");
+    animation-delay: 40s; }
   header .slide:nth-child(12) {
-    background-image: url("../images/futariDori.jpg");
-    animation-delay: 55s; }
+    background-image: url("../images/slider/skok.jpg");
+    animation-delay: 44s; }
   header .slide:nth-child(13) {
-    background-image: url("../images/senoundo.jpg");
-    animation-delay: 60s; }
-@keyframes next-slide {
+    background-image: url("../images/slider/senoundo.jpg");
+    animation-delay: 48s; }
+@-webkit-keyframes next-slide {
   0% {
     opacity: 0; }
   5% {
-    opacity: 1; }
+    opacity: 1;
+    z-index: 100; }
   100% {
     opacity: 0; } }
 .about {
@@ -78,6 +79,8 @@ header {
   .about article {
     float: left;
     padding: 1em 0 0 0.8em; }
+    .about article span {
+      display: none; }
     .about article h1 {
       font-size: 1.9rem;
       color: red;
@@ -91,18 +94,22 @@ header {
       padding: 0.3em 0 0.3em 0;
       text-align: left;
       font-size: 1.7rem; }
-    .about article img {
-      width: 3em;
-      height: 3em;
-      border-radius: 50%;
-      margin-top: 1.5em;
-      margin-left: 7em; }
+  .about .logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-top: 1.5em;
+    margin-left: 7em; }
 
 nav ul {
   border-top: 1px solid red;
   height: 3em;
   margin: 0 auto;
-  margin-top: 3.8em; }
+  margin-top: 3.8em;
+  position: fixed;
+  width: 100%; }
+  nav ul:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
   nav ul a {
     color: #FFFFFF;
     display: block;
@@ -114,7 +121,7 @@ nav ul {
 
 .aboutUs {
   margin: 1em;
-  margin-top: 3em; }
+  margin-top: 8em; }
   .aboutUs h3 {
     color: yellow;
     font-size: 2rem;
@@ -156,16 +163,38 @@ nav ul {
 
 .photos {
   margin: 0 auto;
-  margin-top: 2em; }
+  margin-top: 5em; }
+  .photos img {
+    width: 70%;
+    margin: 1em;
+    margin-left: 2em; }
+  .photos .hidden {
+    display: none; }
   .photos h2 {
     text-align: center;
     font-size: 2rem;
     color: yellow; }
   .photos h3 {
+    color: red;
+    font-size: 2rem;
     padding: 1em; }
+  .photos button {
+    font-size: 1.5rem;
+    margin-top: 3em;
+    border: 1px solid yellow;
+    padding: 0.4em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 4em; }
+  .photos .buttonColor {
+    background-color: red;
+    content: "schowaj"; }
 
 .news {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 19em; }
   .news h2 {
     color: red;
     font-size: 2rem;
@@ -180,30 +209,84 @@ nav ul {
     header .slider, header .slide {
       height: 100vh; }
 
-  .about {
-    height: 70vh; }
-    .about .baner {
-      width: 80%;
-      height: 40%;
-      background-image: url(../images/aikido_poziom.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+  .about .baner img {
+    display: none; }
+  .about article {
+    position: absolute;
+    top: 0.1em;
+    z-index: 800;
+    height: 50%;
+    width: 50%;
+    margin-left: 2em;
+    padding: 1em; }
+    .about article span {
+      display: inline;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: red; }
+    .about article h1, .about article h2, .about article p {
+      opacity: 0; }
+    .about article:hover h1, .about article:hover h2, .about article:hover p {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .about article h1 {
       margin-top: 2em; }
-      .about .baner img {
-        display: none; }
-    .about article {
-      height: 50%;
-      margin-left: 2em;
-      padding: 1em; }
-      .about article p {
-        font-size: 2rem; }
-      .about article img {
-        margin-left: 16em;
-        margin-top: -5em; }
+    .about article p {
+      font-size: 2rem; }
+  .about .logo {
+    margin-left: 40em;
+    margin-top: 3em;
+    z-index: 200; }
 
   nav {
-    height: 30vh; } }
+    position: fixed;
+    top: 70%;
+    z-index: 1000;
+    width: 100%; }
+    nav ul {
+      position: absolute;
+      width: 100%;
+      padding-left: 3em; }
+      nav ul a {
+        font-size: 2.5rem;
+        color: white; }
+
+  .aboutUs {
+    margin-top: -7em; }
+    .aboutUs .column {
+      float: left;
+      width: 30%;
+      padding: 0.5em; }
+      .aboutUs .column .master {
+        font-family: 2rem;
+        color: yellow;
+        text-transform: uppercase; }
+      .aboutUs .column p {
+        padding: 1em; }
+      .aboutUs .column h5 {
+        padding: 2em;
+        font-style: italic;
+        font-size: 3rem; }
+
+  .pricing {
+    height: 100vh;
+    width: 100%;
+    clear: both;
+    margin-top: 7em;
+    border: 1px solid blue; }
+    .pricing h4 {
+      font-size: 2.5rem;
+      margin-top: 1em; }
+    .pricing .prices, .pricing .discounts {
+      float: left;
+      margin: 3em; }
+
+  .photos {
+    clear: both; }
+    .photos img {
+      width: 50%;
+      height: 50%;
+      float: left; } }
 html {
   font-size: 62.5%;
   margin: 0 auto; }

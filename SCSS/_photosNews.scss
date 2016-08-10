@@ -1,19 +1,62 @@
 .photos {
     margin:0 auto;
-    margin-top:2em;
+    margin-top:5em;
+  
+    
+     
+    img {
+      
+       width:70%;
+       margin:1em;
+       margin-left:2em;
+          
+     }
+    .hidden {
+        display:none;
+    }
+    
+   
     h2{
         text-align: center;
         font-size:2rem;
         color:yellow;
     }
     h3 {
-        
+        color:red;
+        font-size:2rem;
         padding:1em;
     }
+    
+     button {
+         
+        font-size:1.5rem;
+       
+        margin-top:3em;
+       
+        border:1px solid yellow;
+        padding:0.4em;
+        cursor:pointer;
+        background-color:black;
+        color:white;
+        width:4em;
+        
+        
+          
+    }
+    
+    .buttonColor {
+        background-color: red;
+        content:"schowaj"
+    }
+   
+       
 }
 
 .news {
     margin: 0 auto;
+    margin-top:5em;
+    margin-bottom:19em;
+    
     h2 {
         color:red;
         font-size:2rem;
