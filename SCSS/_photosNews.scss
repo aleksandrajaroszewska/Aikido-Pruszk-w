@@ -1,16 +1,26 @@
 .photos {
+    position:relative;
     margin:0 auto;
     margin-top:5em;
-  
+    padding-top:20em;
+    padding-bottom:5em;
+    background-image: url("../images/trening/dzieci/aikido_20141209_80864.JPG");
+   background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     
-     
-    img {
+    
+    .horizontal {
       
-       width:70%;
-       margin:1em;
-       margin-left:2em;
-          
+       width:100%;
+        float:left;
      }
+    
+     .vertical {
+        width:50%;
+        float:left;
+    }
+    
     .hidden {
         display:none;
     }
@@ -18,8 +28,13 @@
    
     h2{
         text-align: center;
-        font-size:2rem;
-        color:yellow;
+        font-size:2.5rem;
+        color:red;
+        position:absolute;
+        text-transform:uppercase;
+        top:13em;
+        left:1em;
+       
     }
     h3 {
         color:red;
@@ -30,31 +45,35 @@
      button {
          
         font-size:1.5rem;
-       
-        margin-top:3em;
-       
-        border:1px solid yellow;
-        padding:0.4em;
+        margin-top:5em;
+        margin-left:1em;  
+        border-radius:8%;
+        padding:0.3em;
         cursor:pointer;
         background-color:black;
         color:white;
         width:4em;
+        height:2.5em; 
+         
         
         
           
     }
     
     .buttonColor {
-        background-color: red;
-        content:"schowaj"
+        background-color:white;
+        color:black;
+        
+       
     }
    
        
 }
 
 .news {
+    clear:both;
     margin: 0 auto;
-    margin-top:5em;
+    margin-top:10em;
     margin-bottom:19em;
     
     h2 {

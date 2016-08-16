@@ -10,7 +10,8 @@
  
     }   
     .about {
-       
+      
+        height:0;
         .baner {
            
           img{
@@ -21,7 +22,7 @@
         }
            
         article {
-
+ 
             position:absolute;
             top:0.1em;
             z-index:800;
@@ -35,9 +36,13 @@
             
             span { 
                 display:inline;
-                font-size:3.5rem;
+                font-size:4rem;
                 font-weight:bold;
-                color:red;
+                text-transform:uppercase;
+                color:white;
+                //background-color:rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+                
                
             }
             
@@ -66,9 +71,8 @@
         
         }   
         .logo {
-               margin-left:40em;
-               margin-top:3em;
-               z-index:200;
+              display:none;
+               
                
         
             }    
@@ -78,6 +82,7 @@
        top:70%;
        z-index:1000;
        width:100%;
+      
        
        ul {
            position:absolute;
@@ -97,7 +102,8 @@
   
     }
     .aboutUs {
-        margin-top:-7em;;
+      
+       
         
         
         .column {
@@ -118,6 +124,10 @@
                 padding:1em;
             }
             
+            a {
+                color:red;
+                text-decoration: none;
+            }
            h5 {
                 padding:2em;
                 font-style: italic;
@@ -134,11 +144,13 @@
         width:100%;
         clear:both;
         margin-top:7em;
-        border:1px solid blue;
+       
+        
        
         h4 {
-            font-size:2.5rem;
-            margin-top:1em;
+            font-size:3rem;
+            margin-top:2em;
+            
         }
         
         
@@ -153,14 +165,46 @@
     
     .photos {
         clear:both;
+       
+        background-image: url("../images/staze_obozy/leman_2010.jpg");
         
-        img{
-            width:50%;
-            height:50%;
-            float:left;
+       
+        
+       
+        
+        h2 {
+            
+         font-size:3rem;
+         color:black;
+         top:3em;
+         font-weight:bold;
+            
         }
         
-      
+         button {
+            width:5.2em;
+            height:2.5em;
+            text-transform: uppercase;
+            font-size:2rem;
+            
+        }
+       
+        
+        .vertical {
+            width:25%;
+           
+        }
+        .horizontal{
+                  width:45%;
+              }  
+        }   
+            
+    .up {
+        margin-top:-7em;
     }
+        
+        
+      
+    
     
 }

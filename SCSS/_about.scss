@@ -1,7 +1,8 @@
 .about {
     width:100%;
-    height:43vh;
+    height:47vh;
     margin: 0 auto;
+   
        
     .baner {
         img {
@@ -68,6 +69,7 @@ nav {
              margin-top:3.8em;
              position:fixed;
              width:100%;
+             z-index:80;
            &:hover {
                background-color:rgba(0, 0, 0, 0.8);
            }         

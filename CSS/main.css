@@ -69,7 +69,7 @@ header {
     opacity: 0; } }
 .about {
   width: 100%;
-  height: 43vh;
+  height: 47vh;
   margin: 0 auto; }
   .about .baner img {
     width: 20%;
@@ -107,7 +107,8 @@ nav ul {
   margin: 0 auto;
   margin-top: 3.8em;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 80; }
   nav ul:hover {
     background-color: rgba(0, 0, 0, 0.8); }
   nav ul a {
@@ -156,44 +157,61 @@ nav ul {
 .pricing .discounts .title {
   color: red; }
 .pricing h4 {
-  color: red;
+  color: white;
+  font-size: 2rem;
   padding: 1em;
   text-align: center;
   margin: 0 auto; }
 
 .photos {
+  position: relative;
   margin: 0 auto;
-  margin-top: 5em; }
-  .photos img {
-    width: 70%;
-    margin: 1em;
-    margin-left: 2em; }
+  margin-top: 5em;
+  padding-top: 20em;
+  padding-bottom: 5em;
+  background-image: url("../images/trening/dzieci/aikido_20141209_80864.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .photos .horizontal {
+    width: 100%;
+    float: left; }
+  .photos .vertical {
+    width: 50%;
+    float: left; }
   .photos .hidden {
     display: none; }
   .photos h2 {
     text-align: center;
-    font-size: 2rem;
-    color: yellow; }
+    font-size: 2.5rem;
+    color: red;
+    position: absolute;
+    text-transform: uppercase;
+    top: 13em;
+    left: 1em; }
   .photos h3 {
     color: red;
     font-size: 2rem;
     padding: 1em; }
   .photos button {
     font-size: 1.5rem;
-    margin-top: 3em;
-    border: 1px solid yellow;
-    padding: 0.4em;
+    margin-top: 5em;
+    margin-left: 1em;
+    border-radius: 8%;
+    padding: 0.3em;
     cursor: pointer;
     background-color: black;
     color: white;
-    width: 4em; }
+    width: 4em;
+    height: 2.5em; }
   .photos .buttonColor {
-    background-color: red;
-    content: "schowaj"; }
+    background-color: white;
+    color: black; }
 
 .news {
+  clear: both;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 10em;
   margin-bottom: 19em; }
   .news h2 {
     color: red;
@@ -209,34 +227,36 @@ nav ul {
     header .slider, header .slide {
       height: 100vh; }
 
-  .about .baner img {
-    display: none; }
-  .about article {
-    position: absolute;
-    top: 0.1em;
-    z-index: 800;
-    height: 50%;
-    width: 50%;
-    margin-left: 2em;
-    padding: 1em; }
-    .about article span {
-      display: inline;
-      font-size: 3.5rem;
-      font-weight: bold;
-      color: red; }
-    .about article h1, .about article h2, .about article p {
-      opacity: 0; }
-    .about article:hover h1, .about article:hover h2, .about article:hover p {
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.3); }
-    .about article h1 {
-      margin-top: 2em; }
-    .about article p {
-      font-size: 2rem; }
-  .about .logo {
-    margin-left: 40em;
-    margin-top: 3em;
-    z-index: 200; }
+  .about {
+    height: 0; }
+    .about .baner img {
+      display: none; }
+    .about article {
+      position: absolute;
+      top: 0.1em;
+      z-index: 800;
+      height: 50%;
+      width: 50%;
+      margin-left: 2em;
+      padding: 1em; }
+      .about article span {
+        display: inline;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer; }
+      .about article h1, .about article h2, .about article p {
+        opacity: 0; }
+      .about article:hover h1, .about article:hover h2, .about article:hover p {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3); }
+      .about article h1 {
+        margin-top: 2em; }
+      .about article p {
+        font-size: 2rem; }
+    .about .logo {
+      display: none; }
 
   nav {
     position: fixed;
@@ -251,42 +271,70 @@ nav ul {
         font-size: 2.5rem;
         color: white; }
 
-  .aboutUs {
-    margin-top: -7em; }
-    .aboutUs .column {
-      float: left;
-      width: 30%;
-      padding: 0.5em; }
-      .aboutUs .column .master {
-        font-family: 2rem;
-        color: yellow;
-        text-transform: uppercase; }
-      .aboutUs .column p {
-        padding: 1em; }
-      .aboutUs .column h5 {
-        padding: 2em;
-        font-style: italic;
-        font-size: 3rem; }
+  .aboutUs .column {
+    float: left;
+    width: 30%;
+    padding: 0.5em; }
+    .aboutUs .column .master {
+      font-family: 2rem;
+      color: yellow;
+      text-transform: uppercase; }
+    .aboutUs .column p {
+      padding: 1em; }
+    .aboutUs .column a {
+      color: red;
+      text-decoration: none; }
+    .aboutUs .column h5 {
+      padding: 2em;
+      font-style: italic;
+      font-size: 3rem; }
 
   .pricing {
     height: 100vh;
     width: 100%;
     clear: both;
-    margin-top: 7em;
-    border: 1px solid blue; }
+    margin-top: 7em; }
     .pricing h4 {
-      font-size: 2.5rem;
-      margin-top: 1em; }
+      font-size: 3rem;
+      margin-top: 2em; }
     .pricing .prices, .pricing .discounts {
       float: left;
       margin: 3em; }
 
   .photos {
-    clear: both; }
-    .photos img {
-      width: 50%;
-      height: 50%;
-      float: left; } }
+    clear: both;
+    background-image: url("../images/staze_obozy/leman_2010.jpg"); }
+    .photos h2 {
+      font-size: 3rem;
+      color: black;
+      top: 3em;
+      font-weight: bold; }
+    .photos button {
+      width: 5.2em;
+      height: 2.5em;
+      text-transform: uppercase;
+      font-size: 2rem; }
+    .photos .vertical {
+      width: 25%; }
+    .photos .horizontal {
+      width: 45%; }
+
+  .up {
+    margin-top: -7em; } }
+@media only screen and (min-width: 50em) {
+  .about {
+    height: 0; }
+    .about article {
+      width: 25%; }
+
+  .aboutUs {
+    height: 100vh; }
+
+  .pricing {
+    height: 100vh; }
+
+  .news {
+    height: 100vh; } }
 html {
   font-size: 62.5%;
   margin: 0 auto; }
@@ -295,7 +343,6 @@ body {
   font-family: "Lato", sans-serif;
   color: #FFFFFF;
   background-color: #010101;
-  font-size: 1.6rem;
-  max-width: 1200px; }
+  font-size: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */
