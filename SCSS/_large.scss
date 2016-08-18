@@ -1,5 +1,107 @@
-@media only screen and ( min-width:50em ) {
+@media only screen and ( min-width:59em ) {
     
- 
+ section {
+    .col-1 {
+       width:50%;  
+                 
+    } 
+    
+    .col-2 {
+        width:40%;
+    }
+    
+   
+        
+    }  
+   
+    nav {
+        ul {
+           font-size:3rem;
+        }
+    } 
+    
+   .about,
+    .classes {
+        .logo {
+            width:5em;
+            height:5em;
+            margin-left:23em;
+        }
+        .text {
+            height:30em;
+            background-color:rgb(237, 178, 0);
+            box-sizing:border-box;
+            border-top:2px solid black;
+             border-top:2px solid black;
+            padding:3em;
+            p {
+             line-height:1.6em;
+                padding:1em;
+                
+              
+            }
+              
+        }
+        .hiddenSmall, .visible {
+            height:30em;
+            display:block;
+            width:100%;
+            box-sizing:border-box;
+            border:2px solid black;
+            
+            &:hover{
+                border:3px solid white;
+                
+                
+                
+            }  
+         
+        }
+        .visibleSmall {
+            display:none;
+              
+            
+          } 
+        .mediumVisible {
+            display:none;
+        }
+        
+    
+    }
+    .classes {
+        padding-bottom:5em;
+    }
+     .news {
+         padding-bottom:5em;
+         .start{
+           margin:2em;  
+         }
+        .place {
+            margin-top:-5em;
+            margin-left:-2em;
+            width:38%
+            
+        }   
+    }
+    .pricing {
+        
+        .prices, 
+         .discounts {
+       
+            margin:1em;
+            
+        .title {
+            font-size:3rem;
+            color:white;
+             margin-bottom:2em;
+        }
+        
+        td {
+            font-size:2rem;
+        }
+    }
+        
+        
+    }
    
 }

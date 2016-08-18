@@ -1,4 +1,4 @@
-
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 @import "slider";
 @import "base";
 @import "small";
@@ -9,6 +9,8 @@
 html {
     font-size:62.5%;
     margin:0 auto;
+    font-family:"Open Sans", sans-serif;
+   
 }
 
 body {

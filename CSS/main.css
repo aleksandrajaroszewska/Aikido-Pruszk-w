@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
 header {
   width: 100%;
   max-width: 1200px; }
@@ -68,80 +69,137 @@ header {
   z-index: 1000;
   width: 100%;
   height: 100vh; }
+  .schedule .kanji {
+    width: 10%;
+    margin: 1em; }
   .schedule article {
     position: absolute;
     top: 2em;
-    padding: 1em 0 0 0.8em;
-    font-weight: bold; }
-    .schedule article span {
-      display: none; }
-    .schedule article h1 {
-      font-size: 2.2rem;
-      padding: 0.1em 0 0.1em 0;
-      font-weight: 900; }
+    left: 3em;
+    padding: 2em;
+    font-weight: bold;
+    display: none;
+    border-radius: 5%;
+    background-color: rgba(130, 130, 130, 0.5);
+    color: white; }
     .schedule article h2 {
-      padding: 1em 0 1em 0;
+      padding: 0.3em;
       text-transform: uppercase;
-      font-size: 2rem; }
+      color: white; }
+    .schedule article h3 {
+      padding: 0.7em; }
     .schedule article p {
-      padding: 0.3em 0 0.3em 0;
-      text-align: left;
-      font-size: 1.9rem; }
+      padding: 0.2em;
+      text-align: left; }
+      .schedule article p:last-child {
+        padding: 1em; }
   .schedule nav {
     position: absolute;
-    bottom: 1em;
+    top: 90%;
     height: 30vh; }
     .schedule nav ul {
       border-top: 1px solid red;
       height: 3em;
       margin: 0 auto;
-      margin-top: 3.8em;
       position: fixed;
       width: 100%; }
       .schedule nav ul:hover {
-        background-color: rgba(0, 0, 0, 0.8); }
+        background-color: rgba(0, 0, 0, 0.7); }
       .schedule nav ul a {
         color: #FFFFFF;
         display: block;
         float: left;
-        font-size: 2rem;
         padding: 0.5em;
         text-decoration: none; }
         .schedule nav ul a:hover {
           color: red; }
 
-.about .text,
-.classes .text {
-  box-sizing: border-box;
-  font-size: 2rem; }
-  .about .text h3,
-  .classes .text h3 {
-    font-size: 2.5rem;
-    padding: 1em; }
+.about .aikido h3,
+.classes .aikido h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic; }
+.about h3,
+.classes h3 {
+  font-size: 2.5rem;
+  padding: 1em;
+  color: white; }
+.about p,
+.classes p {
+  padding: 0.7em;
+  line-height: 1.4em;
+  font-style: italic; }
+  .about p:nth-child(3),
+  .classes p:nth-child(3) {
+    color: white; }
+  .about p span,
+  .classes p span {
+    font-weight: bold; }
+.about a,
+.classes a {
+  color: white;
+  text-decoration: none; }
+.about .highlighted,
+.classes .highlighted {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin: 1.5em;
+  margin-left: 5em; }
+.about .welcome,
+.classes .welcome {
+  background-color: white;
+  display: inline;
+  padding: 1em;
+  font-weight: 800; }
 
 .news {
+  padding: 2em;
   background-color: #edb200;
   padding: 1em;
   font-size: 2rem; }
+  .news h3 {
+    font-size: 3rem;
+    padding: 2em;
+    font-style: italic;
+    font-weight: bold; }
+  .news h4 {
+    font-size: 2rem;
+    padding: 1em;
+    text-transform: uppercase;
+    color: white; }
+  .news .start p {
+    padding: 0.4em;
+    font-size: 2rem;
+    line-height: 1.5em; }
+    .news .start p:last-child {
+      background-color: white;
+      margin: 2em;
+      text-align: center; }
+  .news .place {
+    margin: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white; }
+    .news .place p {
+      padding: 0.2em; }
+  .news img {
+    width: 80%; }
 
 .pricing {
   background-color: #edb200;
-  padding: 3em; }
+  padding: 3em;
+  padding-bottom: 5em; }
 
 .prices, .discounts {
-  margin-bottom: 2em;
   padding: 1em; }
   .prices .title, .discounts .title {
-    padding: 1em; }
+    padding: 1em;
+    font-size: 4rem; }
   .prices td, .discounts td {
     border: 3px solid black;
     padding: 1em; }
-
-.discounts h4 {
-  font-size: 2rem;
-  padding: 1em;
-  text-align: center;
-  margin: 0 auto; }
 
 @media screen and (min-width: 1em) and (max-width: 39.99em) {
   section .col-1 {
@@ -156,14 +214,31 @@ header {
   .about, .classes {
     background-color: #edb200;
     padding: 1em; }
+    .about .dojo, .classes .dojo {
+      position: relative; }
+      .about .dojo .logo, .classes .dojo .logo {
+        width: 4em;
+        height: 4em;
+        border: 1px solid black;
+        position: absolute;
+        top: 165%;
+        left: 80%;
+        z-index: 50; }
     .about img, .classes img {
       height: 15em;
       margin: 0 auto;
       width: 90%; }
-    .about p, .classes p {
-      padding: 0.5em; }
-    .about .hidden, .classes .hidden {
+    .about .hiddenSmall, .classes .hiddenSmall {
       display: none; }
+    .about .mediumVisible, .classes .mediumVisible {
+      display: none; }
+
+  .news .place {
+    width: 80%;
+    font-size: 1.4rem;
+    margin-left: 0; }
+  .news img {
+    width: 90%; }
 
   /* .about,
    .classes {
@@ -340,43 +415,143 @@ header {
        }
        
    }*/ }
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40em) and (max-width: 58.9em) {
+  section .col-1 {
+    width: 50%; }
+  section .col-2 {
+    width: 80%; }
+
+  .about .logo,
+  .classes .logo {
+    width: 4em;
+    height: 4em;
+    margin-left: 10em; }
+  .about .text,
+  .classes .text {
+    height: 35em;
+    background-color: #edb200;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    border-top: 2px solid black;
+    padding: 0.5em; }
+    .about .text p,
+    .classes .text p {
+      line-height: 1.6em;
+      padding: 0.2em; }
+  .about .mediumVisible,
+  .classes .mediumVisible {
+    height: 35em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black; }
+    .about .mediumVisible:hover,
+    .classes .mediumVisible:hover {
+      border: 3px solid white; }
+  .about .visibleSmall,
+  .classes .visibleSmall {
+    display: none; }
+  .about .hiddenSmall, .about .visible,
+  .classes .hiddenSmall,
+  .classes .visible {
+    display: none; }
+
+  .classes {
+    padding-bottom: 5em; }
+
+  .news {
+    padding-bottom: 5em; }
+    .news .start {
+      margin: 2em; }
+    .news .place {
+      width: 60%; }
+    .news img {
+      width: 80%;
+      margin-left: 2em; }
+
+  .pricing .prices,
+  .pricing .discounts {
+    margin: 1em; }
+    .pricing .prices .title,
+    .pricing .discounts .title {
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 2em; }
+    .pricing .prices td,
+    .pricing .discounts td {
+      font-size: 2rem; } }
+@media only screen and (min-width: 59em) {
   section .col-1 {
     width: 50%; }
   section .col-2 {
     width: 40%; }
 
+  nav ul {
+    font-size: 3rem; }
+
+  .about .logo,
+  .classes .logo {
+    width: 5em;
+    height: 5em;
+    margin-left: 23em; }
   .about .text,
   .classes .text {
-    height: 24em;
-    background-color: #edb200; }
+    height: 30em;
+    background-color: #edb200;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    border-top: 2px solid black;
+    padding: 3em; }
     .about .text p,
     .classes .text p {
-      padding: 0.2em;
-      line-height: 1.2em; }
-  .about .hidden, .about .visible,
-  .classes .hidden,
+      line-height: 1.6em;
+      padding: 1em; }
+  .about .hiddenSmall, .about .visible,
+  .classes .hiddenSmall,
   .classes .visible {
     height: 30em;
     display: block;
-    width: 100%; }
-  .about .large,
-  .classes .large {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black; }
+    .about .hiddenSmall:hover, .about .visible:hover,
+    .classes .hiddenSmall:hover,
+    .classes .visible:hover {
+      border: 3px solid white; }
+  .about .visibleSmall,
+  .classes .visibleSmall {
+    display: none; }
+  .about .mediumVisible,
+  .classes .mediumVisible {
     display: none; }
 
-  .prices,
-  .discounts {
+  .classes {
+    padding-bottom: 5em; }
+
+  .news {
+    padding-bottom: 5em; }
+    .news .start {
+      margin: 2em; }
+    .news .place {
+      margin-top: -5em;
+      margin-left: -2em;
+      width: 38%; }
+
+  .pricing .prices,
+  .pricing .discounts {
     margin: 1em; }
-    .prices .title,
-    .discounts .title {
+    .pricing .prices .title,
+    .pricing .discounts .title {
       font-size: 3rem;
-      color: white; }
-    .prices td,
-    .discounts td {
+      color: white;
+      margin-bottom: 2em; }
+    .pricing .prices td,
+    .pricing .discounts td {
       font-size: 2rem; } }
 html {
   font-size: 62.5%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif; }
 
 body {
   font-size: 1.6rem; }
