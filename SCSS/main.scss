@@ -1,8 +1,7 @@
 
-@import "header";
-@import "about";
-@import "aboutUspricing";
-@import "photosNews";
+@import "slider";
+@import "base";
+@import "small";
 @import "medium";
 @import "large";
 
@@ -11,12 +10,30 @@ html {
     font-size:62.5%;
     margin:0 auto;
 }
+
 body {
-    font-family: "Lato", sans-serif;
-    color: #FFFFFF;
-    background-color: #010101;
-    font-size:1.6rem;
-   
-}
+ //main color background-color:rgb(237, 178, 0);  
+ 
+ font-size:1.6rem;  
+ .row:before,
+ .row:after {
+    content:"";
+    display:table;
+    clear:both;         
+    }
+
+[class*='col-']{
+    
+float:left;
+min-height:1px;
+//width:25%;
+text-align:justify;
+    text-indent: 1em;
+padding: 0 15;
+box-sizing:border-box;
+  }
+ }
+
+
 
 

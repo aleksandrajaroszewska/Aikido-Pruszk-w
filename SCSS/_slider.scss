@@ -1,13 +1,13 @@
 header {
     width:100%;
     max-width:1200px;
-    height:35vh;
+   
    
    .slider, .slide {
         
         width:100%;
-        height:35vh;
-        
+        height:100vh;
+        border-bottom:5px solid black;
        
     }
     
@@ -23,12 +23,7 @@ header {
         -webkit-animation-fill-mode:forwards;
         -webkit-animation-iteration-count: infinite;
         
-        p {
-           color:red;
-           font-size:1.5rem;
-           font-weight:bold; 
-           padding:0.2em 0 0 0.2em;
-        }
+       
         
         
     }
