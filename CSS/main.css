@@ -23,7 +23,7 @@ header {
     background-image: url("../images/slider/berek.jpg");
     animation-delay: 4s; }
   header .slide:nth-child(3) {
-    background-image: url("../images/slider/DSC09459.JPG");
+    background-image: url("../images/trening/dorosli/futariDori.jpg");
     animation-delay: 8s; }
   header .slide:nth-child(4) {
     background-image: url("../images/slider/DSC09646.JPG");
@@ -55,6 +55,25 @@ header {
   header .slide:nth-child(13) {
     background-image: url("../images/slider/senoundo.jpg");
     animation-delay: 48s; }
+  @media screen and (min-width: 1px) and (max-width: 430px) {
+    header .slide:nth-child(3) {
+      background-image: url("../images/pokazy/wianki2012(4).JPG");
+      animation-delay: 8s; }
+    header .slide:nth-child(4) {
+      background-image: url("../images/aikido_20141209_81230.jpg");
+      animation-delay: 12s; }
+    header .slide:nth-child(7) {
+      background-image: url("../images/trening/dorosli/rafal.jpg");
+      animation-delay: 24s; }
+    header .slide:nth-child(8) {
+      background-image: url("../images/pokazy/wianki2012(3).JPG");
+      animation-delay: 28s; }
+    header .slide:nth-child(10) {
+      background-image: url("../images/trening/dzieci/aikido_20141209_80401.JPG");
+      animation-delay: 36s; }
+    header .slide:nth-child(12) {
+      background-image: url("../images/trening/dzieci/P1060690.JPG");
+      animation-delay: 44s; } }
 @-webkit-keyframes next-slide {
   0% {
     opacity: 0; }
@@ -69,15 +88,27 @@ header {
   z-index: 1000;
   width: 100%;
   height: 100vh; }
+  .schedule h1 {
+    font-size: 3rem;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2em; }
+  .schedule h2 {
+    font-size: 2rem;
+    padding-left: 3em;
+    font-weight: 800;
+    color: #d5b009;
+    margin-top: -1.8em; }
   .schedule .kanji {
     width: 10%;
     margin: 1em; }
   .schedule article {
     position: absolute;
-    top: 2em;
-    left: 3em;
-    padding: 2em;
-    font-weight: bold;
+    top: 8em;
+    left: 4em;
+    padding: 1em;
     display: none;
     border-radius: 5%;
     background-color: rgba(130, 130, 130, 0.5);
@@ -98,7 +129,6 @@ header {
     top: 90%;
     height: 30vh; }
     .schedule nav ul {
-      border-top: 1px solid red;
       height: 3em;
       margin: 0 auto;
       position: fixed;
@@ -114,51 +144,54 @@ header {
         .schedule nav ul a:hover {
           color: red; }
 
-.about .aikido h3,
-.classes .aikido h3 {
-  font-size: 3rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-style: italic; }
-.about h3,
-.classes h3 {
-  font-size: 2.5rem;
-  padding: 1em;
-  color: white; }
-.about p,
-.classes p {
-  padding: 0.7em;
-  line-height: 1.4em;
-  font-style: italic; }
-  .about p:nth-child(3),
-  .classes p:nth-child(3) {
+.about, .classes, .kids, .olders {
+  background-color: #d5b009; }
+  .about h3, .classes h3, .kids h3, .olders h3 {
+    font-size: 2.5rem;
+    padding: 1em;
+    font-weight: bolder; }
+  .about p, .classes p, .kids p, .olders p {
+    padding: 0.7em;
+    line-height: 1.4em;
+    font-style: italic; }
+    .about p span, .classes p span, .kids p span, .olders p span {
+      font-weight: bold; }
+  .about .highlighted, .classes .highlighted, .kids .highlighted, .olders .highlighted {
+    background-color: black;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-bottom: 0.5em;
     color: white; }
-  .about p span,
-  .classes p span {
-    font-weight: bold; }
-.about a,
-.classes a {
-  color: white;
-  text-decoration: none; }
-.about .highlighted,
-.classes .highlighted {
-  background-color: black;
-  color: white;
-  padding: 1em;
-  margin: 1.5em;
-  margin-left: 5em; }
-.about .welcome,
-.classes .welcome {
+
+.about .aikido {
+  background-color: #d5b009;
+  padding-bottom: 2em; }
+  .about .aikido p {
+    color: white;
+    padding: 1em; }
+    .about .aikido p:nth-child(3) {
+      color: black; }
+  .about .aikido h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic; }
+
+.dojo span {
+  color: white; }
+
+.kids p, .olders p {
+  padding: 1em; }
+  .kids p:nth-child(3), .olders p:nth-child(3) {
+    color: white; }
+.kids .welcome, .olders .welcome {
   background-color: white;
   display: inline;
-  padding: 1em;
-  font-weight: 800; }
+  padding: 0.5em;
+  font-weight: 800;
+  margin-top: 2em; }
 
 .news {
-  padding: 2em;
-  background-color: #edb200;
-  padding: 1em;
-  font-size: 2rem; }
+  background-color: white; }
   .news h3 {
     font-size: 3rem;
     padding: 2em;
@@ -169,76 +202,206 @@ header {
     padding: 1em;
     text-transform: uppercase;
     color: white; }
-  .news .start p {
-    padding: 0.4em;
-    font-size: 2rem;
-    line-height: 1.5em; }
-    .news .start p:last-child {
-      background-color: white;
-      margin: 2em;
-      text-align: center; }
-  .news .place {
-    margin: 1em;
-    padding: 1em;
+  .news h5 {
+    padding: 0.3em;
+    color: black;
+    font-weight: bold; }
+  .news h6 {
+    padding: 0.5em;
     background-color: black;
-    color: white; }
+    margin-left: 5em;
+    margin-top: 1em; }
+  .news .start {
+    background-color: black; }
+    .news .start p {
+      padding: 1em;
+      color: white;
+      line-height: 1.5em; }
+      .news .start p:nth-child(3) {
+        background-color: white;
+        color: black;
+        margin: 1em;
+        margin-left: 5em;
+        font-weight: bold; }
+  .news .place {
+    background-color: #d5b009;
+    color: white;
+    margin: 1.5em;
+    padding: 1em; }
     .news .place p {
-      padding: 0.2em; }
+      padding: 0.3em; }
   .news img {
-    width: 80%; }
+    width: 100%;
+    opacity: 0.8; }
 
 .pricing {
-  background-color: #edb200;
-  padding: 3em;
-  padding-bottom: 5em; }
-
-.prices, .discounts {
-  padding: 1em; }
-  .prices .title, .discounts .title {
+  padding: 2em;
+  padding-bottom: 7em;
+  background-color: black;
+  color: white;
+  position: relative; }
+  .pricing table .title {
     padding: 1em;
-    font-size: 4rem; }
-  .prices td, .discounts td {
-    border: 3px solid black;
+    font-size: 3rem; }
+  .pricing table td {
+    border: 5px solid white;
     padding: 1em; }
+  .pricing .addTreining {
+    padding: 2em;
+    width: 80%;
+    margin-top: 3em;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 25em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5em; }
+    .pricing .addTreining a {
+      color: black; }
+    .pricing .addTreining img {
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      margin-left: 8em; }
+  .pricing .discounts {
+    width: 70%;
+    padding: 2em;
+    position: absolute;
+    top: 45em;
+    background-color: black;
+    margin-bottom: 5em;
+    margin-left: 3em; }
+    .pricing .discounts li {
+      padding: 0.4em; }
 
-@media screen and (min-width: 1em) and (max-width: 39.99em) {
+@media screen and (min-width: 1em) {
   section .col-1 {
     width: 100%; }
   section .col-2 {
-    width: 100%; }
+    width: 50%; }
   section .col-3 {
     width: 33%; }
   section .col-4 {
     width: 25%; }
 
-  .about, .classes {
-    background-color: #edb200;
-    padding: 1em; }
-    .about .dojo, .classes .dojo {
-      position: relative; }
-      .about .dojo .logo, .classes .dojo .logo {
-        width: 4em;
-        height: 4em;
-        border: 1px solid black;
-        position: absolute;
-        top: 165%;
-        left: 80%;
-        z-index: 50; }
-    .about img, .classes img {
-      height: 15em;
-      margin: 0 auto;
-      width: 90%; }
-    .about .hiddenSmall, .classes .hiddenSmall {
-      display: none; }
-    .about .mediumVisible, .classes .mediumVisible {
-      display: none; }
+  .about {
+    position: relative; }
+    .about .background-dojo {
+      background-image: url("../images/trening/dorosli/Ola_futari.png");
+      background-size: cover;
+      background-position: center;
+      height: 32em;
+      z-index: 5;
+      position: relative;
+      top: 0em; }
+    .about .background-dojo::after {
+      content: "";
+      background-color: black;
+      width: 100%;
+      height: 32em;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 10; }
+    .about .text.dojo {
+      position: absolute;
+      top: 35em;
+      z-index: 100;
+      line-height: 1.5em;
+      color: white;
+      background-color: transparent; }
+      .about .text.dojo p:nth-child(2) {
+        color: #d5b009; }
+    .about .center p {
+      background-color: white;
+      padding-bottom: 1em;
+      line-height: 2em;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2rem; }
+    .about .center a {
+      color: black;
+      text-decoration: none; }
+    .about .center .logo {
+      width: 4em;
+      height: 4em;
+      z-index: 5;
+      border-radius: 50%;
+      margin: -6em 0 0 2em;
+      background-color: white; }
 
-  .news .place {
-    width: 80%;
-    font-size: 1.4rem;
-    margin-left: 0; }
-  .news img {
-    width: 90%; }
+  .kids {
+    position: relative; }
+    .kids .background-children {
+      background-image: url("../images/trening/dzieci/P1060752.JPG");
+      background-size: cover;
+      background-position: center;
+      height: 35em;
+      z-index: 5;
+      position: relative;
+      top: 0em;
+      margin-top: 3em; }
+    .kids .background-children::after {
+      content: "";
+      background-color: black;
+      width: 100%;
+      height: 35em;
+      opacity: 0.4;
+      top: 10em;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      top: 0em;
+      z-index: 10; }
+    .kids .text.children {
+      position: absolute;
+      top: 47em;
+      z-index: 100;
+      line-height: 1.5em;
+      background-color: transparent;
+      color: white; }
+      .kids .text.children span {
+        color: #d5b009; }
+
+  .olders {
+    position: relative; }
+    .olders .background-adults {
+      background-image: url("../images/aikido_20141209_81230.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 35em;
+      z-index: 5;
+      position: relative;
+      top: 0em;
+      margin-top: 3em; }
+    .olders .background-adults::after {
+      content: "";
+      background-color: black;
+      width: 100%;
+      height: 35em;
+      opacity: 0.4;
+      top: 10em;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      top: 0em;
+      z-index: 10; }
+    .olders .text.adults {
+      position: absolute;
+      top: 16em;
+      z-index: 100;
+      line-height: 1.5em;
+      background-color: transparent;
+      color: white; }
+      .olders .text.adults span {
+        color: #d5b009; }
 
   /* .about,
    .classes {
@@ -415,118 +578,40 @@ header {
        }
        
    }*/ }
-@media only screen and (min-width: 40em) and (max-width: 58.9em) {
+@media only screen and (min-width: 550px) {
   section .col-1 {
-    width: 50%; }
+    width: 100%; }
   section .col-2 {
-    width: 80%; }
+    width: 50%; }
+  section .col-3 {
+    width: 25%; }
 
-  .about .logo,
-  .classes .logo {
-    width: 4em;
-    height: 4em;
-    margin-left: 10em; }
-  .about .text,
-  .classes .text {
-    height: 35em;
-    background-color: #edb200;
-    box-sizing: border-box;
-    border-top: 2px solid black;
-    border-top: 2px solid black;
-    padding: 0.5em; }
-    .about .text p,
-    .classes .text p {
-      line-height: 1.6em;
-      padding: 0.2em; }
-  .about .mediumVisible,
-  .classes .mediumVisible {
-    height: 35em;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid black; }
-    .about .mediumVisible:hover,
-    .classes .mediumVisible:hover {
-      border: 3px solid white; }
-  .about .visibleSmall,
-  .classes .visibleSmall {
-    display: none; }
-  .about .hiddenSmall, .about .visible,
-  .classes .hiddenSmall,
-  .classes .visible {
-    display: none; }
+  .about .text, .kids .text, .olders .text {
+    padding: 3em; }
 
-  .classes {
-    padding-bottom: 5em; }
+  .about .center .logo {
+    margin: -1.5em 0 0 2em; }
 
   .news {
-    padding-bottom: 5em; }
+    padding-bottom: 3em; }
     .news .start {
       margin: 2em; }
     .news .place {
       width: 60%; }
     .news img {
       width: 80%;
-      margin-left: 2em; }
-
-  .pricing .prices,
-  .pricing .discounts {
-    margin: 1em; }
-    .pricing .prices .title,
-    .pricing .discounts .title {
-      font-size: 3rem;
-      color: white;
-      margin-bottom: 2em; }
-    .pricing .prices td,
-    .pricing .discounts td {
-      font-size: 2rem; } }
+      margin-left: 2em; } }
 @media only screen and (min-width: 59em) {
   section .col-1 {
-    width: 50%; }
+    width: 50%;
+    height: 30em; }
   section .col-2 {
-    width: 40%; }
+    width: 25%; }
+  section .col-3 {
+    width: 10%; }
 
   nav ul {
     font-size: 3rem; }
-
-  .about .logo,
-  .classes .logo {
-    width: 5em;
-    height: 5em;
-    margin-left: 23em; }
-  .about .text,
-  .classes .text {
-    height: 30em;
-    background-color: #edb200;
-    box-sizing: border-box;
-    border-top: 2px solid black;
-    border-top: 2px solid black;
-    padding: 3em; }
-    .about .text p,
-    .classes .text p {
-      line-height: 1.6em;
-      padding: 1em; }
-  .about .hiddenSmall, .about .visible,
-  .classes .hiddenSmall,
-  .classes .visible {
-    height: 30em;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid black; }
-    .about .hiddenSmall:hover, .about .visible:hover,
-    .classes .hiddenSmall:hover,
-    .classes .visible:hover {
-      border: 3px solid white; }
-  .about .visibleSmall,
-  .classes .visibleSmall {
-    display: none; }
-  .about .mediumVisible,
-  .classes .mediumVisible {
-    display: none; }
-
-  .classes {
-    padding-bottom: 5em; }
 
   .news {
     padding-bottom: 5em; }
@@ -536,18 +621,8 @@ header {
       margin-top: -5em;
       margin-left: -2em;
       width: 38%; }
-
-  .pricing .prices,
-  .pricing .discounts {
-    margin: 1em; }
-    .pricing .prices .title,
-    .pricing .discounts .title {
-      font-size: 3rem;
-      color: white;
-      margin-bottom: 2em; }
-    .pricing .prices td,
-    .pricing .discounts td {
-      font-size: 2rem; } }
+    .news img {
+      width: 50%; } }
 html {
   font-size: 62.5%;
   margin: 0 auto;
@@ -562,7 +637,6 @@ body {
     clear: both; }
   body [class*='col-'] {
     float: left;
-    min-height: 1px;
     text-align: justify;
     text-indent: 1em;
     padding: 0 15;

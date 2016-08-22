@@ -2,15 +2,19 @@
     
  section {
     .col-1 {
-       width:50%;  
+       width:50%;
+        height:30em;
                  
     } 
     
     .col-2 {
-        width:40%;
+        width:25%;
     }
     
-   
+     .col-3 {
+         
+         width:10%;
+     }
         
     }  
    
@@ -20,57 +24,8 @@
         }
     } 
     
-   .about,
-    .classes {
-        .logo {
-            width:5em;
-            height:5em;
-            margin-left:23em;
-        }
-        .text {
-            height:30em;
-            background-color:rgb(237, 178, 0);
-            box-sizing:border-box;
-            border-top:2px solid black;
-             border-top:2px solid black;
-            padding:3em;
-            p {
-             line-height:1.6em;
-                padding:1em;
-                
-              
-            }
-              
-        }
-        .hiddenSmall, .visible {
-            height:30em;
-            display:block;
-            width:100%;
-            box-sizing:border-box;
-            border:2px solid black;
-            
-            &:hover{
-                border:3px solid white;
-                
-                
-                
-            }  
-         
-        }
-        .visibleSmall {
-            display:none;
-              
-            
-          } 
-        .mediumVisible {
-            display:none;
-        }
-        
     
-    }
-    .classes {
-        padding-bottom:5em;
-    }
+   
      .news {
          padding-bottom:5em;
          .start{
@@ -82,24 +37,14 @@
             width:38%
             
         }   
+         
+         img {
+             width:50%;
+         }
     }
     .pricing {
         
-        .prices, 
-         .discounts {
-       
-            margin:1em;
-            
-        .title {
-            font-size:3rem;
-            color:white;
-             margin-bottom:2em;
-        }
         
-        td {
-            font-size:2rem;
-        }
-    }
         
         
     }

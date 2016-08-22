@@ -5,8 +5,12 @@ $(document).ready(function(){
     $(".treining").slideDown();                 
   });
     
-    $(".treining").mouseleave(function(){
-        $(this).slideUp();
-    })
+    $(".kanji").mouseleave(function(){
+        $(".treining").slideUp();
+        
+    });
+   
+    
+    
 });
 

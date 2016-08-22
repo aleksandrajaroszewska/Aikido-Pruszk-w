@@ -23,7 +23,7 @@ header {
         -webkit-animation-fill-mode:forwards;
         -webkit-animation-iteration-count: infinite;
         
-       
+     
         
         
     }
@@ -37,7 +37,7 @@ header {
             animation-delay:4s;
         }
       .slide:nth-child(3) {
-        background-image:url("../images/slider/DSC09459.JPG"); 
+        background-image:url("../images/trening/dorosli/futariDori.jpg"); 
              animation-delay: 8s;
         }
       .slide:nth-child(4) {
@@ -81,7 +81,32 @@ header {
              animation-delay: 48s;
          }
        
-
+    @media  screen and ( min-width:1px) and (max-width:430px) {
+         .slide:nth-child(3) {
+        background-image:url("../images/pokazy/wianki2012(4).JPG"); 
+             animation-delay: 8s;
+        }
+        .slide:nth-child(4) {
+          background-image: url("../images/aikido_20141209_81230.jpg");
+            animation-delay: 12s;
+        }
+         .slide:nth-child(7) {
+         background-image: url("../images/trening/dorosli/rafal.jpg");    
+            animation-delay: 24s;
+        }
+         .slide:nth-child(8) {
+          background-image: url("../images/pokazy/wianki2012(3).JPG");    
+             animation-delay: 28s;
+        }
+         .slide:nth-child(10) {
+            background-image: url("../images/trening/dzieci/aikido_20141209_80401.JPG");
+             animation-delay: 36s;
+        }
+         .slide:nth-child(12) {
+            background-image: url("../images/trening/dzieci/P1060690.JPG");
+             animation-delay: 44s;
+         }
+    }
 @-webkit-keyframes next-slide {
       0% {
        opacity: 0;

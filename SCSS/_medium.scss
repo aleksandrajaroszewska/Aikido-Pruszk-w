@@ -1,74 +1,45 @@
-@media only screen and ( min-width:40em ) and (max-width:58.9em) {
+@media only screen and ( min-width:550px ) {
     
-    section{
+    section {
+        
          .col-1 {
-       width:50%;  
+       width:100%;  
                  
     } 
     
     .col-2 {
-        width:80%;
+        width:50%;
     }
-      
-    }
-   
-        
-    .about,
-    .classes {
-        .logo {
-            width:4em;
-            height:4em;
-            margin-left:10em;
-            
-        }
-        .text {
-            height:35em;
-            background-color:rgb(237, 178, 0);
-            box-sizing:border-box;
-            border-top:2px solid black;
-            border-top:2px solid black;
-            padding:0.5em;
-            
-            p {
-             line-height:1.6em;
-              padding:0.2em;
-                
-              
-            }
-              
-        }
-        .mediumVisible {
-            height:35em;
-            display:block;
-            width:100%;
-            box-sizing:border-box;
-            border:2px solid black;
-            
-            &:hover{
-                border:3px solid white;
-                
-                
-                
-            }  
-         
-        }
-        .visibleSmall {
-            display:none;
-              
-            
-          } 
-        .hiddenSmall, .visible {
-            display:none;
-        }
-        
     
+        .col-3 {
+            width:25%
+        }
     }
-    .classes {
-        padding-bottom:5em;
-    }  
+    .about, .kids, .olders {
+        
+        .text{
+            padding:3em;
+        }
+    }
+   .about {
+       
+        
+        .center {
+           
+             .logo {
+               
+               margin:-1.5em 0 0 2em;
+                  
+           }  
+        }
+    }
+     
+     
+    
+   
     
      .news {
-         padding-bottom:5em;
+         padding-bottom:3em;
          
          .start{
            margin:2em;  
@@ -84,22 +55,7 @@
         }
     }
     .pricing {
-        
-        .prices, 
-         .discounts {
-       
-            margin:1em;
-            
-        .title {
-            font-size:3rem;
-            color:white;
-             margin-bottom:2em;
-        }
-        
-        td {
-            font-size:2rem;
-        }
-    }
+      
         
         
     }
