@@ -33,7 +33,7 @@ header {
             animation-delay: 0s;
         }
       .slide:nth-child(2) {
-       background-image: url("../images/slider/berek.jpg");  
+       background-image: url("../images/trening/dorosli/aikido_20141209_81230.jpg");  
             animation-delay:4s;
         }
       .slide:nth-child(3) {
@@ -41,11 +41,11 @@ header {
              animation-delay: 8s;
         }
       .slide:nth-child(4) {
-          background-image: url("../images/slider/DSC09646.JPG");
+          background-image: url("../images/trening/dorosli/kciuki.jpg");
             animation-delay: 12s;
         }
       .slide:nth-child(5) {
-        background-image: url("../images/slider/P1060657.JPG");
+        background-image: url("../images/trening/dorosli/Ola_futari.png");
             animation-delay: 16s;
          }
         .slide:nth-child(6) {
@@ -57,47 +57,44 @@ header {
             animation-delay: 24s;
         }
         .slide:nth-child(8) {
-          background-image: url("../images/slider/pokaz2.jpg");    
+          background-image: url("../images/trening/dzieci/aikido_20141209_80300.JPG");    
              animation-delay: 28s;
         }
         .slide:nth-child(9) {
-             background-image: url("../images/slider/pokaz3.jpg");
+             background-image: url("../images/trening/dorosli/kopniecie.jpg");
              animation-delay: 32s;
       }
         .slide:nth-child(10) {
-            background-image: url("../images/slider/wianki_2013.JPG");
+            background-image: url("../images/slider/pad.jpg");
              animation-delay: 36s;
         }
         .slide:nth-child(11) {
-            background-image: url("../images/slider/pad.jpg");
+            background-image: url("../images/trening/dorosli/uklon.jpg");
              animation-delay: 40s;
          }
         .slide:nth-child(12) {
-            background-image: url("../images/slider/skok.jpg");
+            background-image: url("../images/slider/senoundo.jpg");
              animation-delay: 44s;
          }
         .slide:nth-child(13) {
-            background-image: url("../images/slider/senoundo.jpg");
+            background-image: url("../images/trening/dorosli/piatka.jpg");
              animation-delay: 48s;
          }
        
     @media  screen and ( min-width:1px) and (max-width:430px) {
          .slide:nth-child(3) {
-        background-image:url("../images/pokazy/wianki2012(4).JPG"); 
+        background-image:url("../images/trening/dorosli/aikido_20141209_81789.jpg"); 
              animation-delay: 8s;
         }
-        .slide:nth-child(4) {
-          background-image: url("../images/aikido_20141209_81230.jpg");
-            animation-delay: 12s;
-        }
+         .slide:nth-child(5) {
+        background-image: url("../images/trening/dorosli/ola_pion.jpg");
+            animation-delay: 16s;
+         }
          .slide:nth-child(7) {
-         background-image: url("../images/trening/dorosli/rafal.jpg");    
+         background-image: url("../images/trening/dorosli/aikido_egz_2014_20140603_58405.jpg");    
             animation-delay: 24s;
         }
-         .slide:nth-child(8) {
-          background-image: url("../images/pokazy/wianki2012(3).JPG");    
-             animation-delay: 28s;
-        }
+        
          .slide:nth-child(10) {
             background-image: url("../images/trening/dzieci/aikido_20141209_80401.JPG");
              animation-delay: 36s;

@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
    
-  $(".kanji").mouseenter(function() {
+  $(".slideDown").mouseenter(function() {
     $(".treining").slideDown();                 
   });
     
-    $(".kanji").mouseleave(function(){
+    $(".slideDown").mouseleave(function(){
         $(".treining").slideUp();
         
     });

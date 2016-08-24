@@ -1,52 +1,154 @@
-@media only screen and ( min-width:59em ) {
+
+
+@media only screen and ( min-width:767px ) {
     
  section {
+     max-width: 1250px;
+     margin:0 auto;
+    
     .col-1 {
        width:50%;
-        height:30em;
-                 
+       
     } 
     
     .col-2 {
-        width:25%;
+        width:30%;
     }
     
      .col-3 {
          
-         width:10%;
+         width:100%;
      }
         
     }  
-   
-    nav {
-        ul {
-           font-size:3rem;
+    .schedule {
+        
+        h1 {
+            
+            font-size:3.5rem;
         }
-    } 
-    
-    
+        h2 {
+            font-size:3rem;
+        }
+        
+        nav {
+      
+        
+        ul {
+            
+           font-size:2.5rem;
+           height:2em;
+            
+        }
+      } 
+     
+        
+        
+    }
    
-     .news {
-         padding-bottom:5em;
+    
+    .about {
+        
+     
+        .background-dojo {
+            width:48%;
+        }
+         .text.dojo {
+            position: absolute;
+            top:20em;
+            left:50%;
+            padding:2em;
+        }
+        .logo {
+            width:8em;
+            height:8em;
+            margin-top:3em;
+            margin-left:13em;
+        }
+    }
+    .instructor {
+       
+        
+        
+        .background-rafal {
+                width:48%;
+                margin-right:0.75em;
+            }
+         .background-ola {
+                width:48%;
+                margin-left:0.75em;
+            }
+         
+       
+    }
+     .kids {
+         .text.children {
+            position:absolute;
+            top:10em;
+           
+            padding:2em;
+         }
+         
+         
+    }
+    .olders {
+        
+        .background-adults {
+            margin-top:-2em;
+        }
+        
+        .text.adults {
+            h3 {
+                color:black;
+            }
+            position:absolute;
+            top: 1em;
+            left:50%;
+            padding: 2em;
+        }
+        
+        .highlighted {
+            margin-top:23em;
+        }
+    }   
+    
+.news {
+    height:100vh;     
+     margin-top: 2em; 
+       
          .start{
-           margin:2em;  
+             p {
+              padding:2em;
+        
+           
+           &:nth-child(2){
+               
+               font-size:2.5rem;
+               text-align:left;
+               font-weight:bold;
+           }
+         
+       
+        } 
+            
          }
         .place {
-            margin-top:-5em;
-            margin-left:-2em;
-            width:38%
-            
+          margin-top:30em;  
+          
         }   
          
-         img {
-             width:50%;
-         }
+         
     }
-    .pricing {
+ .pricing {
         
+        .discounts {
+           padding:3em;
+            font-size:2rem;
+        } 
         
-        
-        
+     .addTreining {
+         font-size:2rem;
+     }
     }
    
 }

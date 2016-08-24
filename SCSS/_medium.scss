@@ -1,62 +1,66 @@
 @media only screen and ( min-width:550px ) {
     
     section {
-        
          .col-1 {
-       width:100%;  
-                 
-    } 
+       width:100%;            
+        } 
     
     .col-2 {
-        width:50%;
-    }
-    
+        width:60%;
+       }
         .col-3 {
-            width:25%
+            width:100%
         }
     }
-    .about, .kids, .olders {
-        
-        .text{
-            padding:3em;
-        }
-    }
-   .about {
-       
-        
-        .center {
-           
-             .logo {
-               
-               margin:-1.5em 0 0 2em;
-                  
-           }  
-        }
-    }
-     
-     
     
    
     
-     .news {
-         padding-bottom:3em;
+   .about {
+        .logo {
+          margin:-1.5em 0 0 2em;    
+        }   
+    }
+    .instructor {
+       .text.ola {
+            position:absolute;
+            left:50%;
+            top:23em;
+        } 
+        
+    }
+    
+    .kids {
+        .text {
+            padding:1.5em;
+        }
+        .text.children {
+            margin-top:4em;
+            
+            
+        }
+        .benefits {
+            position:absolute;
+            left:50%;
+            top:30em;
+            z-index:100;
+            
+        }
+    } 
+  
+  .news {
+     height:90vh; 
+     margin-bottom:5em;   
          
          .start{
-           margin:2em;  
+           margin-bottom:5em;  
+          
          }
         .place {
-          width:60%;
+         margin-top:12em;
             
         }  
          
-         img {
-             width:80%;
-             margin-left:2em;
-        }
+         
     }
-    .pricing {
-      
-        
-        
-    }
+ 
 }

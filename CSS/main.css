@@ -20,16 +20,16 @@ header {
     background-image: url("../images/slider/aikido_20141209_80522.JPG");
     animation-delay: 0s; }
   header .slide:nth-child(2) {
-    background-image: url("../images/slider/berek.jpg");
+    background-image: url("../images/trening/dorosli/aikido_20141209_81230.jpg");
     animation-delay: 4s; }
   header .slide:nth-child(3) {
     background-image: url("../images/trening/dorosli/futariDori.jpg");
     animation-delay: 8s; }
   header .slide:nth-child(4) {
-    background-image: url("../images/slider/DSC09646.JPG");
+    background-image: url("../images/trening/dorosli/kciuki.jpg");
     animation-delay: 12s; }
   header .slide:nth-child(5) {
-    background-image: url("../images/slider/P1060657.JPG");
+    background-image: url("../images/trening/dorosli/Ola_futari.png");
     animation-delay: 16s; }
   header .slide:nth-child(6) {
     background-image: url("../images/slider/P1060661.JPG");
@@ -38,36 +38,33 @@ header {
     background-image: url("../images/slider/pokaz.jpg");
     animation-delay: 24s; }
   header .slide:nth-child(8) {
-    background-image: url("../images/slider/pokaz2.jpg");
+    background-image: url("../images/trening/dzieci/aikido_20141209_80300.JPG");
     animation-delay: 28s; }
   header .slide:nth-child(9) {
-    background-image: url("../images/slider/pokaz3.jpg");
+    background-image: url("../images/trening/dorosli/kopniecie.jpg");
     animation-delay: 32s; }
   header .slide:nth-child(10) {
-    background-image: url("../images/slider/wianki_2013.JPG");
+    background-image: url("../images/slider/pad.jpg");
     animation-delay: 36s; }
   header .slide:nth-child(11) {
-    background-image: url("../images/slider/pad.jpg");
+    background-image: url("../images/trening/dorosli/uklon.jpg");
     animation-delay: 40s; }
   header .slide:nth-child(12) {
-    background-image: url("../images/slider/skok.jpg");
+    background-image: url("../images/slider/senoundo.jpg");
     animation-delay: 44s; }
   header .slide:nth-child(13) {
-    background-image: url("../images/slider/senoundo.jpg");
+    background-image: url("../images/trening/dorosli/piatka.jpg");
     animation-delay: 48s; }
   @media screen and (min-width: 1px) and (max-width: 430px) {
     header .slide:nth-child(3) {
-      background-image: url("../images/pokazy/wianki2012(4).JPG");
+      background-image: url("../images/trening/dorosli/aikido_20141209_81789.jpg");
       animation-delay: 8s; }
-    header .slide:nth-child(4) {
-      background-image: url("../images/aikido_20141209_81230.jpg");
-      animation-delay: 12s; }
+    header .slide:nth-child(5) {
+      background-image: url("../images/trening/dorosli/ola_pion.jpg");
+      animation-delay: 16s; }
     header .slide:nth-child(7) {
-      background-image: url("../images/trening/dorosli/rafal.jpg");
+      background-image: url("../images/trening/dorosli/aikido_egz_2014_20140603_58405.jpg");
       animation-delay: 24s; }
-    header .slide:nth-child(8) {
-      background-image: url("../images/pokazy/wianki2012(3).JPG");
-      animation-delay: 28s; }
     header .slide:nth-child(10) {
       background-image: url("../images/trening/dzieci/aikido_20141209_80401.JPG");
       animation-delay: 36s; }
@@ -97,20 +94,17 @@ header {
     line-height: 1.2em; }
   .schedule h2 {
     font-size: 2rem;
-    padding-left: 3em;
+    padding-left: 2em;
     font-weight: 800;
-    color: #d5b009;
-    margin-top: -1.8em; }
-  .schedule .kanji {
-    width: 10%;
-    margin: 1em; }
+    color: #fff30c;
+    margin-top: -1em; }
   .schedule article {
     position: absolute;
-    top: 8em;
+    top: 10em;
     left: 4em;
-    padding: 1em;
+    padding: 0.5em;
     display: none;
-    border-radius: 5%;
+    border-radius: 4%;
     background-color: rgba(130, 130, 130, 0.5);
     color: white; }
     .schedule article h2 {
@@ -118,31 +112,25 @@ header {
       text-transform: uppercase;
       color: white; }
     .schedule article h3 {
-      padding: 0.7em; }
+      padding: 0.5em; }
     .schedule article p {
       padding: 0.2em;
       text-align: left; }
       .schedule article p:last-child {
         padding: 1em; }
-  .schedule nav {
-    position: absolute;
-    top: 90%;
-    height: 30vh; }
-    .schedule nav ul {
-      height: 3em;
-      margin: 0 auto;
-      position: fixed;
-      width: 100%; }
-      .schedule nav ul:hover {
-        background-color: rgba(0, 0, 0, 0.7); }
-      .schedule nav ul a {
-        color: #FFFFFF;
-        display: block;
-        float: left;
-        padding: 0.5em;
-        text-decoration: none; }
-        .schedule nav ul a:hover {
-          color: red; }
+  .schedule nav ul {
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .schedule nav ul a {
+      color: #FFFFFF;
+      display: block;
+      float: left;
+      padding: 0.5em;
+      text-decoration: none; }
+      .schedule nav ul a:hover {
+        color: red; }
 
 .about, .classes, .kids, .olders {
   background-color: #d5b009; }
@@ -151,7 +139,7 @@ header {
     padding: 1em;
     font-weight: bolder; }
   .about p, .classes p, .kids p, .olders p {
-    padding: 0.7em;
+    padding: 0.4em;
     line-height: 1.4em;
     font-style: italic; }
     .about p span, .classes p span, .kids p span, .olders p span {
@@ -163,38 +151,91 @@ header {
     margin-bottom: 0.5em;
     color: white; }
 
-.about .aikido {
-  background-color: #d5b009;
-  padding-bottom: 2em; }
-  .about .aikido p {
-    color: white;
-    padding: 1em; }
-    .about .aikido p:nth-child(3) {
-      color: black; }
-  .about .aikido h3 {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-style: italic; }
+.about {
+  background-color: white; }
+  .about .aikido {
+    padding-bottom: 2em;
+    font-weight: bold; }
+    .about .aikido p {
+      color: black;
+      padding: 1em; }
+      .about .aikido p:nth-child(4) {
+        color: white; }
+    .about .aikido h3 {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-style: italic; }
+
+.instructor {
+  position: relative;
+  margin-top: -2em; }
+  .instructor h3 {
+    font-size: 2.2rem;
+    padding-bottom: 0.3em; }
 
 .dojo span {
   color: white; }
 
-.kids p, .olders p {
-  padding: 1em; }
-  .kids p:nth-child(3), .olders p:nth-child(3) {
-    color: white; }
+.kids p:nth-child(3), .olders p:nth-child(3) {
+  color: white; }
+.kids .highlighted, .olders .highlighted {
+  padding: 2em; }
 .kids .welcome, .olders .welcome {
   background-color: white;
-  display: inline;
-  padding: 0.5em;
+  width: 40%;
+  padding: 0.4em;
   font-weight: 800;
-  margin-top: 2em; }
+  margin-top: -0.5em;
+  margin-left: 6em;
+  font-size: 2rem; }
+
+.pricing {
+  margin-top: 3em;
+  padding-bottom: 3em;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 1em; }
+  .pricing table .title {
+    padding: 1em;
+    font-size: 3rem; }
+  .pricing table td {
+    border: 5px solid white;
+    padding: 1em; }
+  .pricing .addTreining {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    background-color: white;
+    color: black;
+    height: 8em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5em; }
+    .pricing .addTreining p {
+      padding: 0.5em;
+      text-align: center; }
+    .pricing .addTreining a {
+      color: black; }
+    .pricing .addTreining img {
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      margin-left: 8em;
+      margin-top: -0.5em; }
+  .pricing .discounts {
+    background-color: black;
+    padding: 2em; }
+    .pricing .discounts li {
+      padding: 0.4em; }
 
 .news {
+  height: 75vh;
+  position: relative;
+  margin-bottom: 18em;
   background-color: white; }
   .news h3 {
     font-size: 3rem;
-    padding: 2em;
+    padding: 1em;
     font-style: italic;
     font-weight: bold; }
   .news h4 {
@@ -211,424 +252,249 @@ header {
     background-color: black;
     margin-left: 5em;
     margin-top: 1em; }
-  .news .start {
-    background-color: black; }
-    .news .start p {
-      padding: 1em;
-      color: white;
-      line-height: 1.5em; }
-      .news .start p:nth-child(3) {
-        background-color: white;
-        color: black;
-        margin: 1em;
-        margin-left: 5em;
-        font-weight: bold; }
   .news .place {
     background-color: #d5b009;
     color: white;
     margin: 1.5em;
-    padding: 1em; }
+    padding: 0.2em;
+    margin-top: 15em;
+    text-align: left; }
     .news .place p {
       padding: 0.3em; }
-  .news img {
-    width: 100%;
-    opacity: 0.8; }
-
-.pricing {
-  padding: 2em;
-  padding-bottom: 7em;
-  background-color: black;
-  color: white;
-  position: relative; }
-  .pricing table .title {
-    padding: 1em;
-    font-size: 3rem; }
-  .pricing table td {
-    border: 5px solid white;
-    padding: 1em; }
-  .pricing .addTreining {
-    padding: 2em;
-    width: 80%;
-    margin-top: 3em;
-    background-color: white;
-    color: black;
-    position: absolute;
-    top: 25em;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.5em; }
-    .pricing .addTreining a {
-      color: black; }
-    .pricing .addTreining img {
-      width: 4em;
-      height: 4em;
-      border-radius: 50%;
-      margin-left: 8em; }
-  .pricing .discounts {
-    width: 70%;
-    padding: 2em;
-    position: absolute;
-    top: 45em;
+  .news .start {
     background-color: black;
-    margin-bottom: 5em;
-    margin-left: 3em; }
-    .pricing .discounts li {
-      padding: 0.4em; }
+    margin-top: -1em; }
+    .news .start p {
+      padding: 0.5em;
+      color: white;
+      line-height: 1.5em; }
+      .news .start p:nth-child(2) {
+        background-color: white;
+        color: black;
+        font-size: 2rem;
+        text-align: right;
+        font-weight: bold; }
 
 @media screen and (min-width: 1em) {
+  .about .background-dojo, .instructor .background-rafal, .instructor .background-ola, .kids .background-children, .olders .background-adults, .news {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+  .about .background-dojo::after, .instructor .background-rafal::after, .instructor .background-ola::after, .kids .background-children::after, .olders .background-adults::after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 10; }
+
+  .about .text.dojo, .instructor .text.rafal, .instructor .text.ola, .kids .text.children, .olders .text.adults {
+    z-index: 100;
+    line-height: 1.3em;
+    color: white;
+    background-color: transparent;
+    padding: 0.8em; }
+
   section .col-1 {
     width: 100%; }
   section .col-2 {
-    width: 50%; }
+    width: 80%; }
   section .col-3 {
-    width: 33%; }
-  section .col-4 {
-    width: 25%; }
+    width: 100%; }
+
+  .schedule nav {
+    position: absolute;
+    top: 85%; }
 
   .about {
     position: relative; }
     .about .background-dojo {
-      background-image: url("../images/trening/dorosli/Ola_futari.png");
-      background-size: cover;
-      background-position: center;
+      background-image: url("../images/slider/grupa.JPG");
       height: 32em;
       z-index: 5;
       position: relative;
-      top: 0em; }
-    .about .background-dojo::after {
-      content: "";
-      background-color: black;
-      width: 100%;
-      height: 32em;
-      opacity: 0.3;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: 10; }
+      top: 2em;
+      border: 3px solid black; }
     .about .text.dojo {
       position: absolute;
-      top: 35em;
-      z-index: 100;
-      line-height: 1.5em;
-      color: white;
-      background-color: transparent; }
-      .about .text.dojo p:nth-child(2) {
-        color: #d5b009; }
-    .about .center p {
-      background-color: white;
-      padding-bottom: 1em;
-      line-height: 2em;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 2rem; }
-    .about .center a {
-      color: black;
-      text-decoration: none; }
-    .about .center .logo {
-      width: 4em;
-      height: 4em;
-      z-index: 5;
+      top: 51em; }
+    .about .logo {
+      width: 5em;
+      height: 5em;
+      z-index: 50;
       border-radius: 50%;
-      margin: -6em 0 0 2em;
-      background-color: white; }
+      margin: 0 0 0 2em; }
+
+  .instructor {
+    margin-top: 2em;
+    position: relative;
+    top: 1em;
+    margin-bottom: 2em; }
+    .instructor .background-rafal {
+      background-image: url("../images/pokazy/rzut.JPG");
+      height: 35em;
+      z-index: 5;
+      position: relative;
+      border: 3px solid black; }
+    .instructor .text.rafal {
+      position: absolute;
+      top: 23em; }
+    .instructor .background-ola {
+      background-image: url("../images/trening/dorosli/ola_rozciaganie.jpg");
+      height: 35em;
+      z-index: 5;
+      position: relative;
+      border: 3px solid black; }
+    .instructor .text.ola {
+      position: absolute;
+      top: 57em; }
 
   .kids {
-    position: relative; }
+    position: relative;
+    padding-bottom: 3em; }
     .kids .background-children {
-      background-image: url("../images/trening/dzieci/P1060752.JPG");
-      background-size: cover;
-      background-position: center;
+      background-image: url("../images/slider/DSC09459.JPG");
       height: 35em;
       z-index: 5;
       position: relative;
       top: 0em;
       margin-top: 3em; }
-    .kids .background-children::after {
-      content: "";
-      background-color: black;
-      width: 100%;
-      height: 35em;
-      opacity: 0.4;
-      top: 10em;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      top: 0em;
-      z-index: 10; }
     .kids .text.children {
       position: absolute;
-      top: 47em;
-      z-index: 100;
-      line-height: 1.5em;
-      background-color: transparent;
-      color: white; }
-      .kids .text.children span {
-        color: #d5b009; }
+      top: 30em; }
 
   .olders {
     position: relative; }
     .olders .background-adults {
-      background-image: url("../images/aikido_20141209_81230.jpg");
-      background-size: cover;
-      background-position: center;
+      background-image: url("../images/trening/dorosli/aikido_20141209_81230.jpg");
       height: 35em;
       z-index: 5;
       position: relative;
-      top: 0em;
-      margin-top: 3em; }
-    .olders .background-adults::after {
-      content: "";
-      background-color: black;
-      width: 100%;
-      height: 35em;
-      opacity: 0.4;
-      top: 10em;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      top: 0em;
-      z-index: 10; }
+      top: 0em; }
     .olders .text.adults {
       position: absolute;
-      top: 16em;
-      z-index: 100;
-      line-height: 1.5em;
-      background-color: transparent;
-      color: white; }
-      .olders .text.adults span {
-        color: #d5b009; }
+      top: 12em; }
 
-  /* .about,
-   .classes {
-     
-       
-       .aikido {
-           position:relative;
-           display:block;
-           height:35em;
-           padding:1em;
-           border-top:5px solid black;
-          
-           .text {
-            
-              
-           }
-           h3 {
-              margin-bottom:5em;
-              margin-left:5em;
-              font-size:4rem;
-           }
-           p {
-               padding:0.3em;
-           }
-       }
-       .aikido::after {
-       content: "";
-       background: url("..//images/aikidocy.jpg");
-       background-repeat: no-repeat;
-       background-position:center;
-       background-size:cover;    
-       opacity: 0.4;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;   
-       
-       }
-       
-       .dojo {
-           position:relative;
-           display:block;
-           height:30em;
-           padding:1em;
-           padding-top:1em;
-           margin-bottom:10em;
-           border-top:10px solid white;
-          
-           h3 {
-               font-size:3rem;
-               margin-bottom:10em;
-               text-align:center;
-               
-           }
-           p {
-               padding:0.5em;
-           }
-           
-           
-       }
-       .dojo::after {
-       content: "";
-       background: url("../images/trening/dorosli/DSC09646.JPG");
-       background-repeat: no-repeat;
-       background-position:center;
-       background-size:cover;    
-       opacity: 0.5;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;   
-       
-       }
-         .children {
-           position:relative;
-           display:block;
-           height:40em;
-           padding:1em;
-           margin-bottom:10em;
-           border-top:5px solid rgb(237, 178, 0);  
-             h3 {
-                 padding-bottom:15em;
-             }
-             p {
-                 padding:0.6em;
-             }
-       }
-        .children::before {
-       content: "";
-       background-color:rgb(237, 178, 0);  
-       opacity: 0.5;
-       top: -15em;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;
-       height:15em;
-       }
-       .children::after {
-       content: "";
-       background: url("../images/trening/dzieci/DSC09421.JPG");
-       background-repeat: no-repeat;
-       background-position:center;
-       background-size:cover;    
-       opacity: 0.3;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;   
-       
-       }
-         .adults {
-           position:relative;
-           display:block;
-           height:30em;
-           padding:1em;
-           margin-bottom:4em;  
-             h3 {
-                 padding-bottom:8em;
-             }
-             
-             p {
-                 padding:0.5em;
-             }
-             h5{
-                 background-color:black;
-                 color:white;
-                 margin:1em;
-                 margin-left:8em;
-                 width:40%;
-                 padding:1em;
-             }
-           
-       }
-       
-       .adults::before {
-       content: "";
-       background-color:rgb(237, 178, 0);  
-       opacity: 0.5;
-       top: -20em;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;
-       height:20em;
-         
-         
-       }
-       .adults::after {
-       content: "";
-       background: url("../images/trening/dorosli//aikido_20141209_82252.jpg");
-       background-repeat: no-repeat;
-       background-position:center;
-       background-size:cover;    
-       opacity: 0.5;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       position: absolute;
-       z-index: -1;   
-       
-       }
-       .hidden {
-           display:none;
-       }
-       
-   }*/ }
+  .news {
+    background-image: url("../images/pokazy/wianki_2013.JPG"); } }
 @media only screen and (min-width: 550px) {
   section .col-1 {
     width: 100%; }
   section .col-2 {
-    width: 50%; }
+    width: 60%; }
   section .col-3 {
-    width: 25%; }
+    width: 100%; }
 
-  .about .text, .kids .text, .olders .text {
-    padding: 3em; }
-
-  .about .center .logo {
+  .about .logo {
     margin: -1.5em 0 0 2em; }
 
-  .news {
-    padding-bottom: 3em; }
-    .news .start {
-      margin: 2em; }
-    .news .place {
-      width: 60%; }
-    .news img {
-      width: 80%;
-      margin-left: 2em; } }
-@media only screen and (min-width: 59em) {
-  section .col-1 {
-    width: 50%;
-    height: 30em; }
-  section .col-2 {
-    width: 25%; }
-  section .col-3 {
-    width: 10%; }
+  .instructor .text.ola {
+    position: absolute;
+    left: 50%;
+    top: 23em; }
 
-  nav ul {
+  .kids .text {
+    padding: 1.5em; }
+  .kids .text.children {
+    margin-top: 4em; }
+  .kids .benefits {
+    position: absolute;
+    left: 50%;
+    top: 30em;
+    z-index: 100; }
+
+  .news {
+    height: 90vh;
+    margin-bottom: 5em; }
+    .news .start {
+      margin-bottom: 5em; }
+    .news .place {
+      margin-top: 12em; } }
+@media only screen and (min-width: 767px) {
+  section {
+    max-width: 1250px;
+    margin: 0 auto; }
+    section .col-1 {
+      width: 50%; }
+    section .col-2 {
+      width: 30%; }
+    section .col-3 {
+      width: 100%; }
+
+  .schedule h1 {
+    font-size: 3.5rem; }
+  .schedule h2 {
     font-size: 3rem; }
+  .schedule nav ul {
+    font-size: 2.5rem;
+    height: 2em; }
+
+  .about .background-dojo {
+    width: 48%; }
+  .about .text.dojo {
+    position: absolute;
+    top: 20em;
+    left: 50%;
+    padding: 2em; }
+  .about .logo {
+    width: 8em;
+    height: 8em;
+    margin-top: 3em;
+    margin-left: 13em; }
+
+  .instructor .background-rafal {
+    width: 48%;
+    margin-right: 0.75em; }
+  .instructor .background-ola {
+    width: 48%;
+    margin-left: 0.75em; }
+
+  .kids .text.children {
+    position: absolute;
+    top: 10em;
+    padding: 2em; }
+
+  .olders .background-adults {
+    margin-top: -2em; }
+  .olders .text.adults {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    padding: 2em; }
+    .olders .text.adults h3 {
+      color: black; }
+  .olders .highlighted {
+    margin-top: 23em; }
 
   .news {
-    padding-bottom: 5em; }
-    .news .start {
-      margin: 2em; }
+    height: 100vh;
+    margin-top: 2em; }
+    .news .start p {
+      padding: 2em; }
+      .news .start p:nth-child(2) {
+        font-size: 2.5rem;
+        text-align: left;
+        font-weight: bold; }
     .news .place {
-      margin-top: -5em;
-      margin-left: -2em;
-      width: 38%; }
-    .news img {
-      width: 50%; } }
+      margin-top: 30em; }
+
+  .pricing .discounts {
+    padding: 3em;
+    font-size: 2rem; }
+  .pricing .addTreining {
+    font-size: 2rem; } }
 html {
   font-size: 62.5%;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif; }
 
 body {
+  max-width: 1200;
   font-size: 1.6rem; }
   body .row:before,
   body .row:after {
@@ -638,7 +504,6 @@ body {
   body [class*='col-'] {
     float: left;
     text-align: justify;
-    text-indent: 1em;
     padding: 0 15;
     box-sizing: border-box; }
 

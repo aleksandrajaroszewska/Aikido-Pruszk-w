@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import "placeholders";
 @import "slider";
 @import "base";
 @import "small";
@@ -15,7 +16,8 @@ html {
 
 body {
  //main color background-color:rgb(237, 178, 0);  
- 
+  max-width:1200;
+    
  font-size:1.6rem;  
  .row:before,
  .row:after {
@@ -28,7 +30,7 @@ body {
     
 float:left;
 text-align:justify;
-text-indent: 1em;
+
 padding: 0 15;
 box-sizing:border-box;
   }
