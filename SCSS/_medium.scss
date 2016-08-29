@@ -1,66 +1,24 @@
-@media only screen and ( min-width:550px ) {
+@media only screen and ( min-width:479px )  {
     
-    section {
+ section {
          .col-1 {
        width:100%;            
         } 
-    
-    .col-2 {
-        width:60%;
-       }
-        .col-3 {
-            width:100%
-        }
-    }
-    
-   
-    
-   .about {
-        .logo {
-          margin:-1.5em 0 0 2em;    
-        }   
-    }
-    .instructor {
-       .text.ola {
-            position:absolute;
-            left:50%;
-            top:23em;
-        } 
-        
-    }
-    
-    .kids {
-        .text {
-            padding:1.5em;
-        }
-        .text.children {
-            margin-top:4em;
-            
-            
-        }
-        .benefits {
-            position:absolute;
-            left:50%;
-            top:30em;
-            z-index:100;
-            
-        }
-    } 
-  
-  .news {
-     height:90vh; 
-     margin-bottom:5em;   
+ }
+ 
+ 
+       
+ .news {
+     .us{
+         height:100vh;
          
-         .start{
-           margin-bottom:5em;  
-          
-         }
-        .place {
-         margin-top:12em;
-            
-        }  
-         
-         
+     }
+     .you {
+         margin-left:40%;
+         margin-top:7.5em;
+     }
     }
+     
+    
  
 }

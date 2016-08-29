@@ -1,6 +1,6 @@
 
 
-@media only screen and ( min-width:767px ) {
+@media only screen and ( min-width:800px ) {
     
  section {
      max-width: 1250px;
@@ -10,28 +10,24 @@
        width:50%;
        
     } 
-    
-    .col-2 {
-        width:30%;
-    }
-    
-     .col-3 {
-         
+     
+     col-2 {
          width:100%;
      }
+    
         
     }  
-    .schedule {
+ .schedule {
         
-        h1 {
+     h1 {
             
-            font-size:3.5rem;
-        }
-        h2 {
+        font-size:3.5rem;
+     }
+     h2 {
             font-size:3rem;
         }
         
-        nav {
+     nav {
       
         
         ul {
@@ -40,14 +36,11 @@
            height:2em;
             
         }
-      } 
-     
+      }     
         
-        
-    }
+ }
    
-    
-    .about {
+.about {
         
      
         .background-dojo {
@@ -56,7 +49,7 @@
          .text.dojo {
             position: absolute;
             top:20em;
-            left:50%;
+            left:49%;
             padding:2em;
         }
         .logo {
@@ -66,15 +59,23 @@
             margin-left:13em;
         }
     }
-    .instructor {
-       
-        
-        
-        .background-rafal {
-                width:48%;
-                margin-right:0.75em;
+ .instructor {
+     .background-rafal {
+         width:48%;
+         margin-right:0.75em;
+         
             }
-         .background-ola {
+     .text.rafal{
+         margin-left:1%;
+     }
+       .text.ola {
+            position:absolute;
+            left:51%;
+            top:23em;
+        } 
+           
+         
+      .background-ola {
                 width:48%;
                 margin-left:0.75em;
             }
@@ -82,64 +83,50 @@
        
     }
      .kids {
+         
+         h3+p{
+             padding:2em;
+         }
          .text.children {
             position:absolute;
-            top:10em;
-           
-            padding:2em;
+            top:11em;
+            padding:2em;  
+          
          }
-         
+       
+         .benefits {
+            position:absolute;
+           
+            top:30em;
+           
+            
+        }
+        
          
     }
-    .olders {
+.olders {
         
         .background-adults {
             margin-top:-2em;
         }
         
         .text.adults {
+            position:absolute;
+            top: -1em;
+            left:50%;
+            padding: 2em;
+            
             h3 {
                 color:black;
             }
-            position:absolute;
-            top: 1em;
-            left:50%;
-            padding: 2em;
+           
         }
         
         .highlighted {
-            margin-top:23em;
+            margin-top:22em;
         }
     }   
-    
-.news {
-    height:100vh;     
-     margin-top: 2em; 
-       
-         .start{
-             p {
-              padding:2em;
-        
-           
-           &:nth-child(2){
-               
-               font-size:2.5rem;
-               text-align:left;
-               font-weight:bold;
-           }
-         
-       
-        } 
-            
-         }
-        .place {
-          margin-top:30em;  
-          
-        }   
-         
-         
-    }
- .pricing {
+.pricing {
         
         .discounts {
            padding:3em;
@@ -148,7 +135,26 @@
         
      .addTreining {
          font-size:2rem;
+         width:100%;
      }
+}    
+.news {
+        .place {
+           font-size:2rem;
+          
+        }
+    .bigLogo {
+        width:50%;
+        height:10em;
     }
+      .us {
+         height:60vh;
+      }
+         
+         .you {
+           margin-top:7em;
+        }
+ }
+             
    
 }

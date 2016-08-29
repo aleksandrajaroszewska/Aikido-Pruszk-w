@@ -3,7 +3,10 @@
     %image {
         background-size:cover;
         background-position:center;
-        background-repeat:no-repeat;   
+        background-repeat:no-repeat;
+        height:35em;
+        z-index:5;
+        border:3px solid black;  
    }
     
     %filter {
@@ -24,38 +27,32 @@
          line-height:1.3em;
          color:white;
          background-color:transparent;
-         padding:0.8em;   
+         padding:0.6em;   
     }
     
     section { 
         .col-1 {
        width:100%;            
        } 
-        .col-2 {
-        width:80%;
-       }
-       .col-3 {
-        width:100%;
-       }  
+       
    } 
     
-    .schedule {
+ .schedule {
         nav {
             position:absolute;
             top:85%;
         }
         
-    }
-    .about {
-       position:relative; 
-       .background-dojo {
-            background-image:url("../images/slider/grupa.JPG");
-            @extend %image;
-            height:32em;
-            z-index:5;
-            position:relative;
-            top:2em;
-            border:3px solid black;    
+ }
+ .about {
+    position:relative; 
+      .background-dojo {
+        position:relative;
+        top:2em;  
+        background-image:url("../images/trening/dorosli/seiza_color.jpg");
+        @extend %image;
+        background-position:right;  
+        
         }
     
       .background-dojo::after {
@@ -64,7 +61,7 @@
         
        .text.dojo {
             position:absolute;
-            top:51em;
+            top:50em;
             @extend %textOnfilter;
         }       
         .logo {
@@ -72,23 +69,20 @@
                height:5em;
                z-index:50;
                border-radius:50%;
-               margin:0 0 0 2em;   
+               margin:0.6em 0 0 2em;   
            }             
      }
     
-     .instructor {
+ .instructor {
         margin-top:2em;
         position:relative;
         top:1em;
         margin-bottom:2em;
        
         .background-rafal {
-            background-image:url("../images/pokazy/rzut.JPG");
-            @extend %image;
-            height:35em;
-            z-index:5;
             position:relative;
-            border:3px solid black;    
+            background-image:url("../images/pokazy/rzut.JPG");
+            @extend %image;     
         }
     
         .background-rafal::after {
@@ -101,12 +95,10 @@
             @extend %textOnfilter;
          }
          .background-ola {
+            position:relative; 
             background-image:url("../images/trening/dorosli/ola_rozciaganie.jpg");
             @extend %image;
-            height:35em;
-            z-index:5;
-            position:relative;
-            border:3px solid black;    
+                
          }
     
         .background-ola::after {
@@ -120,14 +112,12 @@
         }
     }
     
-    .kids {
+ .kids {
        position:relative;
        padding-bottom:3em;
          .background-children {
             background-image:url("../images/slider/DSC09459.JPG");
             @extend %image;
-            height:35em;
-            z-index:5;
             position:relative;
             top:0em;
              margin-top:3em;   
@@ -145,13 +135,12 @@
         
     }
     
-    .olders {
+ .olders {
         position:relative;
          .background-adults {
             background-image:url("../images/trening/dorosli/aikido_20141209_81230.jpg");
             @extend %image;
-            height:35em;
-            z-index:5;
+           
             position:relative;
             top:0em;   
         }
@@ -165,11 +154,37 @@
             top:12em;
             @extend %textOnfilter;       
         }
-    } 
-    
-    .news {
-          background-image: url("../images/pokazy/wianki_2013.JPG");
-          @extend %image;  
     }
-
+    
+    
+ .news{
+       
+    .bigLogo  {
+            background-image: url(../images/Logo_WCA-1.png);
+            background-position:center;
+            background-size:contain;
+            background-repeat: no-repeat;
+            height:8em;
+            width:100%;
+            a {
+                height:8em;
+                width:100%;
+                display:block;   
+            }
+        }
+        
+    .us {
+          height:50vh;
+          background-image: url("../images/pokazy/wianki_2013.JPG");
+             background-size:cover;
+            background-position:top;
+             margin-bottom:4em;
+        }
+    .you {
+           margin-left:22%;
+           margin-top:4em;
+        }
+        
+ }
+    
 }

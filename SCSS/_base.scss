@@ -1,8 +1,8 @@
+
 .schedule { 
     position:absolute;
     top:0;
-    z-index:1000;
-    
+    z-index:500;
     width:100%;
     height:100vh;
     h1{
@@ -11,7 +11,7 @@
         text-transform: uppercase;
         font-weight: 900;
         color:white;
-        line-height:1.2em;
+        line-height:1.2em;  
     }
     
     h2 {
@@ -20,8 +20,9 @@
         padding-left:2em;
         font-weight:800;
         color: rgb(255, 243, 12);
-       
+        cursor:pointer;
         margin-top:-1em;
+        width:50%;
     }
    
    
@@ -35,13 +36,7 @@
         background-color: rgba(130,130,130,0.5);
         color:white;
 
-        
-         h2 {
-                padding:0.3em;
-                text-transform: uppercase;
-                color:white;
-                
-            } 
+       
         h3 {
             padding:0.5em;
             
@@ -50,34 +45,26 @@
         p {
             padding:0.2em;
             text-align:left;
-           &:last-child {
-            
+        &:last-child { 
             padding:1em;   
-        }    
-          }
-       
+           }    
+        }   
     }
+    
+   
     nav {
-       
-      
      
         ul {
-             
-           
              margin:0 auto;
              position:fixed;
              width:100%;
              background-color:rgba(0, 0, 0, 0.7);
-                   
-                          
+                                 
             a {
                 color:#FFFFFF;
-                display:block;
                 float:left;
                 padding:0.5em;
                 text-decoration:none;
-                
-                
                 &:hover {
                     color:red;
                 }
@@ -87,7 +74,7 @@
       
 }
 
-.about, .classes, .kids, .olders {
+ .about, .classes, .kids, .olders {
       background-color:rgb(213, 176, 9); 
     
      h3 {
@@ -96,9 +83,10 @@
          font-weight:bolder;
             }
      p {
-         padding:0.4em;
+         padding:0.6em;
          line-height:1.4em;
-        font-style: italic;
+        
+         font-style: italic;
          
         span{
             font-weight:bold;
@@ -109,81 +97,58 @@
             margin-top:2em;
             margin-left:3em;
             margin-bottom:0.5em;
-            color:white;
-            
-           
+            color:white;  
         }
 }
 
 .about {
     background-color:white;
      
-    
     .aikido {
        
         padding-bottom:2em;
-        font-weight:bold;
+          font-weight:bold;
         
-        p {
-            color:black;
-            padding:1em;
-            &:nth-child(4) {
-                color:white;
-            } 
-            
-        }
+       
          h3{ 
             font-weight:800;
             text-transform: uppercase;
             font-style:italic;
            }
         
-     }
-    
-          
-    } 
+     }       
+} 
 .instructor {
     position:relative;
     margin-top:-2em;
    
     h3 {
-        font-size:2.2rem;
+       
         padding-bottom:0.3em;
     }
 }
-   .dojo {
-       span {
-           color:white;
-       }
-    
-     }
+
+
+.kids {
+    h3+p{
+        font-weight:bold;
+        color:black;
+    } 
+}
 
 .kids, .olders {
    
-       p {
-            
-            
-            &:nth-child(3) {
-            color:white;
-            } 
-      }
-           .highlighted {
-                 padding:2em;
-           }
-            .welcome {
-                background-color:white;
-                width:40%;
-                padding:0.4em;
-                font-weight:800;
-                margin-top:-0.5em;
-                margin-left:6em;
-                font-size: 2rem;
-                
-            }
-    
-    
+     .welcome {
+         background-color:white;
+         width:50%;
+         padding:0.4em;
+         font-weight:800;
+         margin-top:-0.5em;
+         margin-left:50%;
+         font-size: 2rem;
+         padding-left:0.5em;      
+            }  
 }
-
 
  .pricing {
     
@@ -195,9 +160,7 @@
      padding:1em;
     
      
-     table {
-      
-         
+    table { 
          .title {
         padding:1em;
         font-size:3rem;
@@ -206,11 +169,18 @@
         td {
         border:5px solid white;
         padding:1em;
-       } 
-         
-         
+       }     
      }
-      .addTreining {
+     .discounts {
+         
+         background-color:black;
+         padding:2em;
+            
+         li {
+             padding:0.4em;
+         }
+      } 
+    .addTreining {
         
          margin-top:1em;
          margin-bottom:4em;
@@ -232,96 +202,58 @@
               width: 4em;
               height:4em;
               border-radius:50%;
-              margin-left:8em;
               margin-top:-0.5em;
               
           }          
      }
-     
-     .discounts {
-         
-        
-         background-color:black;
-         padding:2em;
-            
-         li {
-             padding:0.4em;
-         }
-      }
+      
      
 }
-   .news {
-    height:75vh;
+
+.news {
+    height:100vh;
     position:relative;
-    margin-bottom:18em;
-  
     background-color:white; 
-   
-    
-    h3 {
-        font-size:3rem;
-        padding:1em;
-        font-style:italic;
-        font-weight:bold;
-    }
-    h4 {
-        font-size:2rem;
-        padding:1em;
-        text-transform:uppercase;
-        color:white;
-    }
-    
-    h5 {
-        padding:0.3em;
-        color:black;
-        font-weight:bold;
-    }
-    
-    h6 {
-        padding:0.5em;
-        background-color:black;
-        margin-left:5em;
-        margin-top:1em;
-    }
-    
    
     .place {
         
         background-color:rgb(213, 176, 9); 
         color:white;
-        margin:1.5em;
-        padding:0.2em;
-        margin-top:15em;
-        text-align: left;
-        
-        p {
-            padding:0.3em;
-        }
-        
-    }
-    .start {
+        margin-top:1em;
+        padding:2em;
+        text-align:center;
+    h5 {
+        padding:0.3em;
+        color:black;
+        font-weight:bold;
+       }
+    
+    h6 {
+        padding:1em;
         background-color:black;
-        margin-top:-1em;
-       
-       p {
-        padding:0.5em;
-        color:white;
-        line-height:1.5em;
-           
-           &:nth-child(2){
-               background-color:white;
-               color:black;
-               font-size:2rem;
-               text-align:right;
-               font-weight:bold;
-           }
-         
-       
-        } 
+        text-align:center;
+        margin-top:1em;
+       }
+    p {
+            padding:0.3em;
+       }
         
-       
     }
-   
+  
+    .us {
+          
+         
+           
+           .you {
+            color:white;
+            font-size:4rem;
+            font-style:italic;
+            font-weight:bold;
+            z-index:10;
+           
+          }
+       }
+        
 }  
      
     
