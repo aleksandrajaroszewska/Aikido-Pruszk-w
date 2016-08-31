@@ -1,2 +1,1 @@
-
-projekt strony internetowej Aikido Pruszków, tworzony samodzielnie na podstawie własnego pomysłu
+Strona internetowa Warszawskiego Centrum Aikido dojo Pruszków. Stworzona na podstawie wskazówek właściciela firmy bez projektu graficznego. Powstała przy wykorzystaniu HTML5, CSS3 (Sass), javascript(jQuery). Strona jest responsywana - podejście mobile-first, prosty grid, wykorzystanie mediaqueries, stylowanie głownie w procentach, "em" i "rem". 
